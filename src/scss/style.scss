@@ -1,0 +1,74 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/reset";
+
+html {
+  line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  height: 100%;
+
+  @media screen and (min-width: $desktopWidth) {            // min 1200
+		font-size: 18px;
+  }
+  @media screen and (max-width: $desktopWidth) {            // max 1200
+		font-size: 18px;
+  }
+  @media screen and (max-width: $beforeSmDesktopWidth) {    // 991
+    font-size: 16px;
+  }
+  @media screen and (max-width: $beforeTableWidth) {        // max 767
+    font-size: 15px;
+  }
+  @media screen and (max-width: $beforePhoneWidth) {        // max 479
+		font-size: 14px;
+  }
+  @media screen and (max-width: $smPhoneWidth) {             // max 325
+		font-size: 12px;
+  }
+  
+  
+}
+
+body {
+  // background: url(/img/remove/bgggg.png);
+  background-size: cover;
+  //dev
+
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+	font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent!important;
+  &.overflow {
+    overflow: hidden;
+    position: relative;
+  }
+  
+}
+
+section, .section {
+  position: relative;
+  padding: 40px 0;
+  @media screen and (max-width: $desktopWidth) {
+    padding: 20px 0;
+  }
+}
+
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.wrapper {
+  flex: 1;
+  min-height: 89vh;
+}
+
+// Modules
+@import "modules/404.scss"
