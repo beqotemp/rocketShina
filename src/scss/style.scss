@@ -28,12 +28,10 @@ html {
   @media screen and (max-width: $smPhoneWidth) {             // max 325
 		font-size: 12px;
   }
-  
-  
 }
 
 body {
-  // background: url(/img/remove/bgggg.png);
+  background: url(/img/workspace/main-page1440.png);
   background-size: cover;
   //dev
 
@@ -41,7 +39,6 @@ body {
   padding: 0;
   font-family: $mainFont;
 	font-size: $mainFontSize;
-  font-weight: $mainFontWeight;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent!important;
@@ -51,13 +48,8 @@ body {
   }
   
 }
-
-section, .section {
+section {
   position: relative;
-  padding: 40px 0;
-  @media screen and (max-width: $desktopWidth) {
-    padding: 20px 0;
-  }
 }
 
 .Site {
@@ -69,6 +61,17 @@ section, .section {
   flex: 1;
   min-height: 89vh;
 }
-
+// grid update
+.container {
+  @media screen and (min-width: $desktopWidth) {            // min 1200
+		max-width: 1269px;
+  }
+}
 // Modules
+
+@import "modules/main-page.scss";
+@import "modules/navbar.scss";
+@import "modules/promo.scss";
+
+@import "modules/general-items.scss";
 @import "modules/404.scss"

@@ -1,0 +1,116 @@
+.navigation {
+    // background-color: #fbfbfb;
+    &__first {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: #FBFBFB;
+        height: 93px;
+    }
+    &__second {
+        
+    }
+}
+.navbar { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    &__logo {   
+        display: flex;
+        align-items: center;
+        height: 100%;
+        & img {
+            width: 191px;
+            height: auto;
+        }
+    }
+    &__catalog {
+        margin-left: 42px;
+        height: 100%;
+    }
+}
+.catalog-button {
+    position: relative;
+    width: 234px;
+    height: 100%;
+    
+    &__body {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #FAC400;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+    }
+    &__icon {
+        margin-right: 10px;
+    }
+    &__intro {
+        & span {
+            font-family: $AR;
+            font-size: 13px;
+            color: #331500;
+        }
+    }
+    &__collapse {
+        width: 100%;
+        background-color: #F3F3F3;
+        position: absolute;
+        top: 0%;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: .4s;
+        
+    }
+    &__list {
+        display:flex;
+        flex-direction: column;
+    }
+    &__list-item {
+        position: relative;
+        font-family: $AR;
+        font-size: 12px;
+        line-height: 15px;
+        color:#331500;
+        padding: 23px 17px 23px 47px;
+        
+        &:after {
+            content:'';
+            position: absolute;
+            width: 60%;
+            bottom: 0;
+            height: 2px;
+            background-color: #dedede;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &.show &__collapse {
+        top:100%;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.main-nav {
+    position: relative;
+    width: 100%;
+    &__item {
+        font-family: $AR;
+        font-size: 14px;
+        color: #282828;
+        margin-right: 55px;
+        &:last-child() {
+            margin-right: 0;
+        }
+    }
+}
+
+
+
+
+// hamburger

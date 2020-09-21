@@ -1,11 +1,10 @@
 // Font
-$mainFont                : 'Montserrat', Helvetica, Arial, sans-serif;
+$mainFont                : 'Activist Regular', 'Montserrat', Helvetica, Arial, sans-serif;
 
 // Size
-$mainFontColor           : #101010;
-$mainFontSize            : 18px;
-$mainFontWeight          : 400;
-$mainLineHeight          : 1.4;
+$mainFontColor           : #434343;
+$mainFontSize            : 13px;
+$mainLineHeight          : 21.44px;;
 
 $desktopWidth            : 1200px;
 $smDesktopWidth          : 992px;
@@ -16,13 +15,7 @@ $phoneWidth              : 480px;
 $beforePhoneWidth        : 479px;
 $smPhoneWidth            : 325px;
 
-$BEB: 'BlissPro-ExtraBold', $mainFont;
-
-$SFB: 'SFUI Display Bold', $mainFont;
-$SFL: 'SFUI Display Light', $mainFont;
-$SFM: 'SFUI Display Medium', $mainFont;
-$SFR: 'SFUI Display Regular', $mainFont;
-$SFS: 'SFUI Display SemiBold', $mainFont;
+$AR: 'Activist Regular', $mainFont;
 
 $GL: 'Gilroy Light', $mainFont;
 $GM: 'Gilroy Medium', $mainFont;

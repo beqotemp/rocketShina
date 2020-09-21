@@ -1,0 +1,42 @@
+.promo-line {
+    background-color: #272727;
+    height: 47px;
+    padding-left: 64px;
+    padding-right: 23px;
+    &__body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__intro {
+        margin-left: -27px;
+        & span {
+            font-family: $GR;
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+    &__button {
+        margin-left: 40px;
+        & a {
+            font-family: $GR;
+            color: #fff;
+            padding: 8px 24px;
+            border: 1px solid #494949;
+            font-size: 12px;
+            letter-spacing: -0.4px;
+        }
+    }
+    &__pic {
+        & img {
+            height: 100%;
+            width: auto;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+
+.burger-svg {
+    display: inline-block;
+    width: 22px;
+    vertical-align: middle;
+    height: 18px;
+    transition: 0.4s ease;
+    background-color: #331500;
+    -webkit-mask: url(../img/svg/burger.svg) no-repeat center;
+    mask: url(../img/svg/burger.svg) no-repeat center;
+}

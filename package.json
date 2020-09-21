@@ -11,7 +11,6 @@
     "serve": "webpack-dev-server --host 192.168.1.180 --port 8080"
   },
   "dependencies": {
-    "bootstrap": "^4.2.1",
     "popper.js": "^1.14.6",
     "simplebar": "^5.2.1",
     "v-calendar": "^1.0.1"
@@ -19,6 +18,7 @@
   "devDependencies": {
     "@glidejs/glide": "github:glidejs/glide",
     "autoprefixer": "^9.7.4",
+    "bootstrap": "^5.0.0-alpha1",
     "bootstrap-4-grid": "^3.3.0",
     "clean-webpack-plugin": "^1.0.0",
     "copy-webpack-plugin": "^4.6.0",

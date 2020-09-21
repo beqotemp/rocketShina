@@ -1,34 +1,9 @@
 // Fonts here
 // see more: https://github.com/vedees/webpack-template/blob/master/README.md#import-js-files
-
-
-@font-face {
-    font-family: "BlissPro-ExtraBold";
-    src: url(../fonts/BlissPro-ExtraBold.woff);
-}
-
-@font-face {
-	font-family: "SFUI Display Bold";
-	src: url(../fonts/SFUIDisplay-Bold.woff);
-}
-@font-face {
-	font-family: "SFUI Display Light";
-	src: url(../fonts/SFUIDisplay-Light.woff);
-}
-@font-face {
-	font-family: "SFUI Display Medium";
-	src: url(../fonts/SFUIDisplay-Medium.woff);
-}
-@font-face {
-	font-family: "SFUI Display Regular";
-	src: url(../fonts/SFUIDisplay-Regular.woff);
-}
-@font-face {
-	font-family: "SFUI Display SemiBold";
-	src: url(../fonts/SFUIDisplay-Semibold.woff);
-}
-
-
+  @font-face {
+    font-family: "Activist Regular"; 
+    src: url(../fonts/Activist.woff);
+  }
  @font-face {
     font-family: "Gilroy Bold"; 
     src: url(../fonts/Gilroy-Bold.woff);
