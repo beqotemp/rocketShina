@@ -3,13 +3,19 @@
         <div class="container">
             <div class="navbar">
                 <div class="navbar__logo">
-                    <img src="../../img/general/logo.svg" alt="">
+                    <a href="#">
+                        <img src="../../img/general/logo.svg" alt="">
+                    </a>
                 </div>
                 <div class="navbar__catalog">
-                    <div class="catalog-button">
+                    <div id="catalog-button" class="catalog-button">
                         <div class="catalog-button__body">
                             <div class="catalog-button__icon">
-                                <div class="burger-svg"></div>
+                                <button id="navbar-burger-desk" class="navbar-burger" type="button">
+                                    <div class="navbar-burger__box">
+                                        <span class="navbar-burger__inner"></span>
+                                    </div>
+                                </button>
                             </div>
                             <div class="catalog-button__intro">
                                 <span>Каталог товаров</span>
@@ -25,37 +31,187 @@
                     </div>
                 </div>
                 <div class="navbar__search">
-                    search
+                    <div class="navbar-search">
+                        <div class="navbar-search__body">
+                            <div class="search-svg"></div>
+                            <input type="search" placeholder="Поиск по сайту">
+                            <div class="navbar-search__button-search">
+                                <div class="arrow-svg"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="navbar__lang">
-                    eng
+                    <div class="navbar-lang">
+                        <a href="#">
+                            EN
+                        </a>
+                    </div>
                 </div>
                 <div class="navbar__number">
-                    +7 (965) 654-67-56
+                    <div class="navbar-number">
+                        <a href="tel:+79656546756" class="number-button">+7 (965) 654-67-56</a>
+                    </div>
+                </div>
+                <div class="navbar__collapse-burger">
+                    <div id="navbar-collapse-burger" class="navbar-collapse-burger">
+                        <div class="navbar-collapse-burger__body">
+                            <div class="navbar-collapse-burger__icon">
+                                <button id="navbar-burger-mob" class="navbar-burger" type="button">
+                                    <div class="navbar-burger__box">
+                                        <span class="navbar-burger__inner"></span>
+                                    </div>
+                                </button>
+                            </div>
+                            <div id="collapse-burger__intro" class="navbar-collapse-burger__intro">
+                                <span class="menu">Меню</span>
+                                <span class="close">Закрыть</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>         
     <div class="navigation__second">
-        <div class="navigation__collapse">
+        <div id="navigation__collapse" class="navigation__collapse">
             <div class="container">
                 <nav class="main-nav" id="main-nav">
                     <div class="main-nav__mob">
-                        <a href="#" class="main-nav__item">Все шины</a>
-                        <a href="#" class="main-nav__item">Крупногабаритные шины</a>
-                        <a href="#" class="main-nav__item">Грузовые шины</a>
+                        <a href="#" class="main-nav__item">
+                            <span>Все шины</span>
+                        </a>
+                        <a href="#" class="main-nav__item">
+                            <span>Крупногабаритные шины</span>
+                        </a>
+                        <a href="#" class="main-nav__item">
+                            <span>Грузовые шины</span>
+                        </a>
                     </div>
-                    <a href="#" class="main-nav__item">О компании</a>
-                    <a href="#" class="main-nav__item">Доставка и оплата</a>
-                    <a href="#" class="main-nav__item">Дилерам и оптовым клиентам </a>
-                    <a href="#" class="main-nav__item">Растаможка шин</a>
-                    <a href="#" class="main-nav__item">Отзывы</a>
-                    <a href="#" class="main-nav__item">Статьи</a>
-                    <a href="#" class="main-nav__item">Контакты</a>
+                    <a href="#" class="main-nav__item">
+                        <span>О компании</span>
+                        <div class="nav-loading">
+                            <div class="nav-loading__body">
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-nav__item">
+                        <span>Доставка и оплата</span>
+                        <div class="nav-loading">
+                            <div class="nav-loading__body">
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- <a href="#" class="main-nav__item">
+                        <span>Доставка и оплата</span>
+                        <div class="nav-loading">
+                            <div class="nav-loading__body">
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-nav__item">
+                        <span>Доставка и оплата</span>
+                        <div class="nav-loading">
+                            <div class="nav-loading__body">
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-nav__item">
+                        <span>Доставка и оплата</span>
+                        <div class="nav-loading">
+                            <div class="nav-loading__body">
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-nav__item">
+                        <span>Доставка и оплата</span>
+                        <div class="nav-loading">
+                            <div class="nav-loading__body">
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-nav__item">
+                        <span>Доставка и оплата</span>
+                        <div class="nav-loading">
+                            <div class="nav-loading__body">
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                            </div>
+                        </div>
+                    </a> -->
+                    <a href="#" class="main-nav__item">
+                        <span>Дилерам и оптовым клиентам </span>
+                        <div class="nav-loading">
+                            <div class="nav-loading__body">
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-nav__item">
+                        <span>Растаможка шин</span>
+                        <div class="nav-loading">
+                            <div class="nav-loading__body">
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-nav__item">
+                        <span>Отзывы</span>
+                        <div class="nav-loading">
+                            <div class="nav-loading__body">
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-nav__item">
+                        <span>Статьи</span>
+                        <div class="nav-loading">
+                            <div class="nav-loading__body">
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-nav__item">
+                        <span>Контакты</span>
+                        <div class="nav-loading">
+                            <div class="nav-loading__body">
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                            </div>
+                        </div>
+                    </a>
                 </nav>
                 <div class="navbar__lang-mob">
                     <a href="#">
-                        <span></span>
+                        <span>Switch to english version</span>
                     </a>
                 </div>
             </div>

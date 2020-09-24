@@ -1,12 +1,34 @@
 .promo-line {
     background-color: #272727;
     height: 47px;
-    padding-left: 64px;
-    padding-right: 23px;
+    padding-left: 234px;
+    padding-right: 138px;
+    position: relative;
+    & .container {
+        @media screen and (max-width: $beforeSmDesktopWidth) {    // 991
+            max-width: 750px;
+        }
+    }
+    @media screen and (max-width: $beforeDesktopWidth) {            // max 1200
+        height: 33px;
+    }
+    @media screen and (max-width: $beforeSmDesktopWidth) {    // max 991
+        height: 33px;
+        padding-left: 46px;
+        padding-right: 0;
+    }
+    @media screen and (max-width: $beforeTableWidth) {        // max 767
+        height: 33px;
+        padding: 0;
+        z-index: 4;
+    }
     &__body {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            margin: 0 -15px;
+        }
     }
 
     &__info {
@@ -16,14 +38,38 @@
     }
     &__intro {
         margin-left: -27px;
+        @media screen and (max-width: $beforeSmDesktopWidth) {    // 991
+            margin-left: 10px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            margin-left: 5px;
+        }
         & span {
             font-family: $GR;
             font-size: 16px;
             color: #fff;
+            @media screen and (max-width: $beforeDesktopWidth) {            // max 1200
+                font-size: 12px;
+            }
+            @media screen and (max-width: $beforeSmDesktopWidth) {    // 991
+                font-size: 12px;
+            }
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                font-size: 10px;
+            }
+            @media screen and (max-width: $smPhoneWidth) {             // max 325
+                font-size: 7px;
+            }
         }
     }
     &__button {
         margin-left: 40px;
+        @media screen and (max-width: $beforeSmDesktopWidth) {    // 991
+            margin-left: 10px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            margin-left: 5px;
+        }
         & a {
             font-family: $GR;
             color: #fff;
@@ -31,12 +77,59 @@
             border: 1px solid #494949;
             font-size: 12px;
             letter-spacing: -0.4px;
+            @media screen and (max-width: $desktopWidth) {            // max 1200
+                font-size: 9px;
+                padding: 6px 17px;
+            }
+            @media screen and (max-width: $beforeSmDesktopWidth) {    // 991
+                font-size: 9px;
+                padding: 6px 17px;
+            }
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                padding: 7px 14px;
+                font-size: 8px;
+            }
+            @media screen and (max-width: $smPhoneWidth) {             // max 325
+                font-size: 7px;
+            }
         }
     }
-    &__pic {
-        & img {
-            height: 100%;
-            width: auto;
+    &__left-pic {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 47px;
+        width: 124px; 
+        background-position-y: 50%;
+        @media screen and (max-width: $desktopWidth) {            // max 1200
+            height: 33px;
+        }
+        @media screen and (max-width: $beforeSmDesktopWidth) {    // 991
+            height: 33px;
+            width: 94px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            height: 33px;
+            width: 50px;
+        }
+    }
+    &__right-pic {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 47px;
+        width: 198px;
+        background-position-y:10px;
+        background-position-y: 39%;
+        @media screen and (max-width: $desktopWidth) {            // max 1200
+            height: 33px;
+        }
+        @media screen and (max-width: $beforeSmDesktopWidth) {    // 991
+            height: 33px;
+            width: 137px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            height: 33px;
+            width: 55px;
         }
     }
 }
+

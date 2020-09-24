@@ -5,7 +5,9 @@
 // import './scripts/sticky.js'
 // import './scripts/slick-slider'
 // import './scripts/azazlyst'
-// import "./scripts/slider";
+import "./scripts/menu";
+import "./scripts/slider";
+
 
 // // Vue
 // import Vue from 'vue/dist/vue.common.dev';

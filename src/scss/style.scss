@@ -13,25 +13,48 @@ html {
   @media screen and (min-width: $desktopWidth) {            // min 1200
 		font-size: 18px;
   }
-  @media screen and (max-width: $desktopWidth) {            // max 1200
+  @media screen and (max-width: $beforeDesktopWidth) {            // max 1999
 		font-size: 18px;
+  }
+  @media screen and (min-width: $smDesktopWidth ) {         // 991
+    font-size: 16px;
   }
   @media screen and (max-width: $beforeSmDesktopWidth) {    // 991
     font-size: 16px;
   }
+  @media screen and (min-width: $tableWidth) {              // min 768
+    font-size: 15px;
+  }
   @media screen and (max-width: $beforeTableWidth) {        // max 767
     font-size: 15px;
+  }
+  @media screen and (min-width: $bigPhoneWidth) {           // max 575
+    font-size: 15px;
+  }
+  @media screen and (max-width: $beforeBigPhoneWidth) {     // max 575
+    font-size: 15px;
+  }
+  @media screen and (min-width: $phoneWidth) {                // min 480
+		font-size: 14px;
   }
   @media screen and (max-width: $beforePhoneWidth) {        // max 479
 		font-size: 14px;
   }
+
   @media screen and (max-width: $smPhoneWidth) {             // max 325
 		font-size: 12px;
   }
 }
-
 body {
+  // *** Main page
   background: url(/img/workspace/main-page1440.png);
+  // background: url(/img/workspace/main-page991.png);
+  // background: url(/img/workspace/main-page720.png);
+  // background: url(/img/workspace/main-page320.png);
+
+  // *** Main page
+  
+
   background-size: cover;
   //dev
 
@@ -63,6 +86,13 @@ section {
 }
 // grid update
 .container {
+  
+  @media screen and (min-width: $tableWidth) and (max-width: $beforeSmDesktopWidth) {        
+    max-width: 750px;
+  }
+  @media screen and (min-width: $smDesktopWidth) and (max-width: $beforeDesktopWidth) {        
+    max-width: 980px;
+  }
   @media screen and (min-width: $desktopWidth) {            // min 1200
 		max-width: 1269px;
   }

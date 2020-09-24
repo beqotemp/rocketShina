@@ -7,10 +7,13 @@ $mainFontSize            : 13px;
 $mainLineHeight          : 21.44px;;
 
 $desktopWidth            : 1200px;
+$beforeDesktopWidth      : 1199px;
 $smDesktopWidth          : 992px;
 $beforeSmDesktopWidth    : 991px;
 $tableWidth              : 768px;
 $beforeTableWidth        : 767px;
+$bigPhoneWidth           : 576px;
+$beforeBigPhoneWidth     : 575px;
 $phoneWidth              : 480px;
 $beforePhoneWidth        : 479px;
 $smPhoneWidth            : 325px;
@@ -21,4 +24,5 @@ $GL: 'Gilroy Light', $mainFont;
 $GM: 'Gilroy Medium', $mainFont;
 $GR: 'Gilroy Regular', $mainFont;
 $GS: 'Gilroy SemiBold', $mainFont;
+
 
