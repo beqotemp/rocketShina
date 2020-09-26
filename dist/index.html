@@ -9,14 +9,982 @@
     <link rel="stylesheet" href="css/style.bundle.css" />
     <title>Main Page | Project</title>
   </head>
-  <body class="Site">
+  <body id="site" class="Site">
     <!-- main wrapper -->
     <div id="app" class="wrapper">
-      header index
+      <div class="promo-line">
+        <div class="container">
+          <div class="promo-line__body">
+            <div class="promo-line__left-pic" style="background-image: url(../../img/general/promo_pic.png);"></div>
+            <div class="promo-line__info">
+              <div class="promo-line__intro">
+                <span>Растаможка шин из любой точки мира</span>
+              </div>
+              <div class="promo-line__button">
+                <a href="">Перейти</a>
+              </div>
+            </div>
+            <div class="promo-line__right-pic" style="background-image: url(../../img/general/promo_pic2.png);"></div>
+          </div>
+        </div>
+      </div>
+      <div class="navigation">
+        <div class="navigation__first">
+          <div class="container">
+            <div class="navbar">
+              <div class="navbar__logo">
+                <a href="#">
+                  <img src="../../img/general/logo.svg" alt="" />
+                </a>
+              </div>
+              <div class="navbar__catalog">
+                <div id="catalog-button" class="catalog-button">
+                  <div class="catalog-button__body">
+                    <div class="catalog-button__icon">
+                      <button id="navbar-burger-desk" class="navbar-burger" type="button">
+                        <div class="navbar-burger__box">
+                          <span class="navbar-burger__inner"></span>
+                        </div>
+                      </button>
+                    </div>
+                    <div class="catalog-button__intro">
+                      <span>Каталог товаров</span>
+                    </div>
+                  </div>
+                  <div class="catalog-button__collapse">
+                    <div class="catalog-button__list">
+                      <a href="#" class="catalog-button__list-item">Все шины</a>
+                      <a href="#" class="catalog-button__list-item">Грузовые шины</a>
+                      <a href="#" class="catalog-button__list-item">Крупногабаритные шины</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="navbar__search">
+                <div class="navbar-search">
+                  <div class="navbar-search__body">
+                    <div class="search-svg"></div>
+                    <input type="search" placeholder="Поиск по сайту" />
+                    <div class="navbar-search__button-search">
+                      <div class="arrow-svg"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="navbar__lang">
+                <div class="navbar-lang">
+                  <a href="#">
+                    EN
+                  </a>
+                </div>
+              </div>
+              <div class="navbar__number">
+                <div class="navbar-number">
+                  <a href="tel:+79656546756" class="number-button">+7 (965) 654-67-56</a>
+                </div>
+              </div>
+              <div class="navbar__collapse-burger">
+                <div id="navbar-collapse-burger" class="navbar-collapse-burger">
+                  <div class="navbar-collapse-burger__body">
+                    <div class="navbar-collapse-burger__icon">
+                      <button id="navbar-burger-mob" class="navbar-burger" type="button">
+                        <div class="navbar-burger__box">
+                          <span class="navbar-burger__inner"></span>
+                        </div>
+                      </button>
+                    </div>
+                    <div id="collapse-burger__intro" class="navbar-collapse-burger__intro">
+                      <span class="menu">Меню</span>
+                      <span class="close">Закрыть</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navigation__second">
+          <div id="navigation__collapse" class="navigation__collapse">
+            <div class="container">
+              <nav class="main-nav" id="main-nav">
+                <div class="main-nav__mob">
+                  <a href="#" class="main-nav__item">
+                    <span>Все шины</span>
+                  </a>
+                  <a href="#" class="main-nav__item">
+                    <span>Крупногабаритные шины</span>
+                  </a>
+                  <a href="#" class="main-nav__item">
+                    <span>Грузовые шины</span>
+                  </a>
+                </div>
+                <a href="#" class="main-nav__item">
+                  <span>О компании</span>
+                  <div class="nav-loading">
+                    <div class="nav-loading__body">
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="main-nav__item">
+                  <span>Доставка и оплата</span>
+                  <div class="nav-loading">
+                    <div class="nav-loading__body">
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                    </div>
+                  </div>
+                </a>
+                <!-- <a href="#" class="main-nav__item">
+                        <span>Доставка и оплата</span>
+                        <div class="nav-loading">
+                            <div class="nav-loading__body">
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-nav__item">
+                        <span>Доставка и оплата</span>
+                        <div class="nav-loading">
+                            <div class="nav-loading__body">
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-nav__item">
+                        <span>Доставка и оплата</span>
+                        <div class="nav-loading">
+                            <div class="nav-loading__body">
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-nav__item">
+                        <span>Доставка и оплата</span>
+                        <div class="nav-loading">
+                            <div class="nav-loading__body">
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-nav__item">
+                        <span>Доставка и оплата</span>
+                        <div class="nav-loading">
+                            <div class="nav-loading__body">
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                            </div>
+                        </div>
+                    </a> -->
+                <a href="#" class="main-nav__item">
+                  <span>Дилерам и оптовым клиентам </span>
+                  <div class="nav-loading">
+                    <div class="nav-loading__body">
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="main-nav__item">
+                  <span>Растаможка шин</span>
+                  <div class="nav-loading">
+                    <div class="nav-loading__body">
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="main-nav__item">
+                  <span>Отзывы</span>
+                  <div class="nav-loading">
+                    <div class="nav-loading__body">
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="main-nav__item">
+                  <span>Статьи</span>
+                  <div class="nav-loading">
+                    <div class="nav-loading__body">
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="main-nav__item">
+                  <span>Контакты</span>
+                  <div class="nav-loading">
+                    <div class="nav-loading__body">
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                    </div>
+                  </div>
+                </a>
+              </nav>
+              <div class="navbar__lang-mob">
+                <a href="#">
+                  <span>Switch to english version</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <header id="main-header" class="main-header">
+        <div class="container">
+          <div class="main-slider">
+            <!-- SLIDES -->
+            <div id="slides" class="main-slider__slides">
+              <!-- slide -->
+              <div class="slide showing">
+                <div class="main-slide slide-first">
+                  <div class="ms-intro">
+                    <div class="ms-intro__pre-title">
+                      <span>/ </span>
+                      <span>Оптом и в розницу</span>
+                    </div>
+                    <div class="ms-intro__heading">
+                      <h1 class="ms-intro__title">
+                        Продажа грузовых и крупногабаритных шин
+                      </h1>
+                    </div>
+                    <div class="ms-intro__subtitle">
+                      <p>Отправляем любое количество позиций товара в любую точку мира с возможностью растаможки</p>
+                    </div>
+                  </div>
+                  <div class="ms-picture">
+                    <div class="ms-picture__item">
+                      <img src="../../img/slider/slider.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- slide END -->
+
+              <!-- slide -->
+              <div class="slide">
+                <div class="main-slide slide-first">
+                  <div class="ms-intro">
+                    <div class="ms-intro__pre-title">
+                      <span>/ </span>
+                      <span>Консультация</span>
+                    </div>
+                    <div class="ms-intro__heading">
+                      <h1 class="ms-intro__title">
+                        Бесплатно проконсультируем и ответим на все вопросы
+                      </h1>
+                    </div>
+                    <div class="ms-intro__subtitle">
+                      <p>Отправляем любое количество позиций товара в любую точку мира с возможностью растаможки</p>
+                    </div>
+                  </div>
+                  <div class="ms-picture">
+                    <div class="ms-picture__item ms-picture-second">
+                      <img src="../../img/slider/slider2.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- slide END -->
+              <!-- slide -->
+              <div class="slide">
+                <div class="main-slide slide-third">
+                  <div class="ms-intro">
+                    <div class="ms-intro__pre-title">
+                      <span>/ </span>
+                      <span>Акция</span>
+                    </div>
+                    <div class="ms-intro__heading">
+                      <h1 class="ms-intro__title">
+                        Скидки 20% на грузовые шины
+                      </h1>
+                    </div>
+                    <div class="ms-intro__subtitle">
+                      <p>Отправляем любое количество позиций товара в любую точку мира с возможностью растаможки</p>
+                    </div>
+                  </div>
+                  <div class="ms-picture">
+                    <div class="ms-picture__item ms-picture-second">
+                      <img src="../../img/slider/slider2.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- slide END -->
+            </div>
+            <!-- slides END -->
+            <!-- Controlers -->
+            <div id="main-slider__dots" class="main-slider__dots dots"></div>
+            <div class="main-slider__arrows">
+              <div id="previous" class="slider-left-svg"></div>
+              <div id="next" class="slider-right-svg"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section id="oversized-preview" class="oversized-preview">
+        <div class="container">
+          <div class="oversized-preview__heading">
+            <h2 class="heading-first-type">
+              Крупногабаритные шины
+            </h2>
+            <a href="#" class="yellow-square-big">
+              <span>Все товары</span>
+            </a>
+          </div>
+          <div class="oversized-preview__wrapper">
+            <div class="row">
+              <!-- item -->
+              <div class="col-xl-3">
+                <div class="product">
+                  <div class="product__body">
+                    <div class="product__head">
+                      <a href="#">
+                        <img src="../../img/products/product.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="product__heading">
+                      <a href="#">
+                        <h3 class="product__title">
+                          Грузовая шина TYREX ALL STEEL TR-1 R22.5 385/65
+                        </h3>
+                      </a>
+                    </div>
+                    <div class="product__intro">
+                      <span class="product__spec">В наличии</span>
+                      <span class="product__spec">Новые</span>
+                    </div>
+                    <div class="product__footer">
+                      <div class="product-price">
+                        <div class="product-price__bg"></div>
+                        <div class="product-price__body">
+                          <div class="product-price__discount">
+                            <span>25 000</span>
+                            <div class="rub-svg"></div>
+                          </div>
+                          <div class="product-price__main">
+                            <span>18 000</span>
+                            <div class="rub-svg"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="buy-button">
+                        <span>Купить</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item END -->
+              <!-- item -->
+              <div class="col-xl-3">
+                <div class="product">
+                  <div class="product__body">
+                    <div class="product__head">
+                      <a href="#">
+                        <img src="../../img/products/product.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="product__heading">
+                      <a href="#">
+                        <h3 class="product__title">
+                          Грузовая шина TYREX ALL STEEL TR-1 R22.5 385/65
+                        </h3>
+                      </a>
+                    </div>
+                    <div class="product__intro">
+                      <span class="product__spec">В наличии</span>
+                      <span class="product__spec">Новые</span>
+                    </div>
+                    <div class="product__footer">
+                      <div class="product-price">
+                        <div class="product-price__bg"></div>
+                        <div class="product-price__body">
+                          <div class="product-price__discount">
+                            <span>25 000</span>
+                            <div class="rub-svg"></div>
+                          </div>
+                          <div class="product-price__main">
+                            <span>18 000</span>
+                            <div class="rub-svg"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="buy-button">
+                        <span>Купить</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item END -->
+              <!-- item -->
+              <div class="col-xl-3">
+                <div class="product">
+                  <div class="product__body">
+                    <div class="product__head">
+                      <a href="#">
+                        <img src="../../img/products/product.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="product__heading">
+                      <a href="#">
+                        <h3 class="product__title">
+                          Грузовая шина TYREX ALL STEEL TR-1 R22.5 385/65
+                        </h3>
+                      </a>
+                    </div>
+                    <div class="product__intro">
+                      <span class="product__spec">В наличии</span>
+                      <span class="product__spec">Новые</span>
+                    </div>
+                    <div class="product__footer">
+                      <div class="product-price">
+                        <div class="product-price__bg"></div>
+                        <div class="product-price__body">
+                          <div class="product-price__discount">
+                            <span>25 000</span>
+                            <div class="rub-svg"></div>
+                          </div>
+                          <div class="product-price__main">
+                            <span>18 000</span>
+                            <div class="rub-svg"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="buy-button">
+                        <span>Купить</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item END -->
+              <!-- item -->
+              <div class="col-xl-3">
+                <div class="product">
+                  <div class="product__body">
+                    <div class="product__head">
+                      <a href="#">
+                        <img src="../../img/products/product.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="product__heading">
+                      <a href="#">
+                        <h3 class="product__title">
+                          Грузовая шина TYREX ALL STEEL TR-1 R22.5 385/65
+                        </h3>
+                      </a>
+                    </div>
+                    <div class="product__intro">
+                      <span class="product__spec">В наличии</span>
+                      <span class="product__spec">Новые</span>
+                    </div>
+                    <div class="product__footer">
+                      <div class="product-price">
+                        <div class="product-price__bg"></div>
+                        <div class="product-price__body">
+                          <div class="product-price__discount">
+                            <span>25 000</span>
+                            <div class="rub-svg"></div>
+                          </div>
+                          <div class="product-price__main">
+                            <span>18 000</span>
+                            <div class="rub-svg"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="buy-button">
+                        <span>Купить</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item END -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="truck-preview" class="truck-preview">
+        <div class="container">
+          <div class="truck-preview__heading">
+            <h2 class="heading-first-type">
+              Грузовые шины
+            </h2>
+            <a href="#" class="yellow-square-big">
+              <span>Все товары</span>
+            </a>
+          </div>
+          <div class="truck-preview__wrapper">
+            <div class="row">
+              <!-- item -->
+              <div class="col-xl-3">
+                <div class="product">
+                  <div class="product__body">
+                    <div class="product__head">
+                      <a href="#">
+                        <img src="../../img/products/product.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="product__heading">
+                      <a href="#">
+                        <h3 class="product__title">
+                          Грузовая шина TYREX ALL STEEL TR-1 R22.5 385/65
+                        </h3>
+                      </a>
+                    </div>
+                    <div class="product__intro">
+                      <span class="product__spec">В наличии</span>
+                      <span class="product__spec">Новые</span>
+                    </div>
+                    <div class="product__footer">
+                      <div class="product-price">
+                        <div class="product-price__bg"></div>
+                        <div class="product-price__body">
+                          <div class="product-price__discount">
+                            <span>25 000</span>
+                            <div class="rub-svg"></div>
+                          </div>
+                          <div class="product-price__main">
+                            <span>18 000</span>
+                            <div class="rub-svg"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="buy-button">
+                        <span>Купить</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item END -->
+              <!-- item -->
+              <div class="col-xl-3">
+                <div class="product">
+                  <div class="product__body">
+                    <div class="product__head">
+                      <a href="#">
+                        <img src="../../img/products/product.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="product__heading">
+                      <a href="#">
+                        <h3 class="product__title">
+                          Грузовая шина TYREX ALL STEEL TR-1 R22.5 385/65
+                        </h3>
+                      </a>
+                    </div>
+                    <div class="product__intro">
+                      <span class="product__spec">В наличии</span>
+                      <span class="product__spec">Новые</span>
+                    </div>
+                    <div class="product__footer">
+                      <div class="product-price">
+                        <div class="product-price__bg"></div>
+                        <div class="product-price__body">
+                          <div class="product-price__discount">
+                            <span>25 000</span>
+                            <div class="rub-svg"></div>
+                          </div>
+                          <div class="product-price__main">
+                            <span>18 000</span>
+                            <div class="rub-svg"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="buy-button">
+                        <span>Купить</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item END -->
+              <!-- item -->
+              <div class="col-xl-3">
+                <div class="product">
+                  <div class="product__body">
+                    <div class="product__head">
+                      <a href="#">
+                        <img src="../../img/products/product.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="product__heading">
+                      <a href="#">
+                        <h3 class="product__title">
+                          Грузовая шина TYREX ALL STEEL TR-1 R22.5 385/65
+                        </h3>
+                      </a>
+                    </div>
+                    <div class="product__intro">
+                      <span class="product__spec">В наличии</span>
+                      <span class="product__spec">Новые</span>
+                    </div>
+                    <div class="product__footer">
+                      <div class="product-price">
+                        <div class="product-price__bg"></div>
+                        <div class="product-price__body">
+                          <div class="product-price__discount">
+                            <span>25 000</span>
+                            <div class="rub-svg"></div>
+                          </div>
+                          <div class="product-price__main">
+                            <span>18 000</span>
+                            <div class="rub-svg"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="buy-button">
+                        <span>Купить</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item END -->
+              <!-- item -->
+              <div class="col-xl-3">
+                <div class="product">
+                  <div class="product__body">
+                    <div class="product__head">
+                      <a href="#">
+                        <img src="../../img/products/product.png" alt="" />
+                      </a>
+                    </div>
+                    <div class="product__heading">
+                      <a href="#">
+                        <h3 class="product__title">
+                          Грузовая шина TYREX ALL STEEL TR-1 R22.5 385/65
+                        </h3>
+                      </a>
+                    </div>
+                    <div class="product__intro">
+                      <span class="product__spec">В наличии</span>
+                      <span class="product__spec">Новые</span>
+                    </div>
+                    <div class="product__footer">
+                      <div class="product-price">
+                        <div class="product-price__bg"></div>
+                        <div class="product-price__body">
+                          <div class="product-price__discount">
+                            <span>25 000</span>
+                            <div class="rub-svg"></div>
+                          </div>
+                          <div class="product-price__main">
+                            <span>18 000</span>
+                            <div class="rub-svg"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="buy-button">
+                        <span>Купить</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item END -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="benefits" class="benefits">
+        <div class="container">
+          <div class="benefits__heading">
+            <h2 class="heading-first-type">
+              Почему выгодно покупать у нас
+            </h2>
+          </div>
+          <div class="benefits__wrapper">
+            <div class="row">
+              <!-- item -->
+              <div class="col-xl-3">
+                <div class="benefit">
+                  <div class="benefit__head">
+                    <img src="../../img/general/benefit1.png" alt="" />
+                  </div>
+                  <div class="benefit__heading">
+                    <span>Вы знаете что покупает</span>
+                  </div>
+                  <div class="benefit__body">
+                    <p>
+                      Мы всегда предлагаем Вам приехать к нам на склад в Москве и самостоятельно выбрать шины. Если
+                      такой возможности нет, вы находитесь в регионе - высылаем подробные фото отгружаемых шин
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- item END -->
+              <!-- item -->
+              <div class="col-xl-3">
+                <div class="benefit">
+                  <div class="benefit__head">
+                    <img src="../../img/general/benefit2.png" alt="" />
+                  </div>
+                  <div class="benefit__heading">
+                    <span>Доставка в любой город мира</span>
+                  </div>
+                  <div class="benefit__body">
+                    <p>
+                      Мы всегда предлагаем Вам приехать к нам на склад в Москве и самостоятельно выбрать шины. Если
+                      такой возможности нет, вы находитесь в регионе - высылаем подробные фото отгружаемых шин
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- item END -->
+              <!-- item -->
+              <div class="col-xl-3">
+                <div class="benefit">
+                  <div class="benefit__head">
+                    <img src="../../img/general/benefit3.png" alt="" />
+                  </div>
+                  <div class="benefit__heading">
+                    <span>Лучшие цены на рынке</span>
+                  </div>
+                  <div class="benefit__body">
+                    <p>
+                      Мы всегда предлагаем Вам приехать к нам на склад в Москве и самостоятельно выбрать шины. Если
+                      такой возможности нет, вы находитесь в регионе - высылаем подробные фото отгружаемых шин
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- item END -->
+              <!-- item -->
+              <div class="col-xl-3">
+                <div class="benefit">
+                  <div class="benefit__head">
+                    <img src="../../img/general/benefit4.png" alt="" />
+                  </div>
+                  <div class="benefit__heading">
+                    <span>Гибкие условия оплаты</span>
+                  </div>
+                  <div class="benefit__body">
+                    <p>
+                      Мы всегда предлагаем Вам приехать к нам на склад в Москве и самостоятельно выбрать шины. Если
+                      такой возможности нет, вы находитесь в регионе - высылаем подробные фото отгружаемых шин
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- item END -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="reviews">
+        <div class="container">
+          <div class="reviews__heading">
+            <h2 class="heading-first-type">
+              Отзывы
+            </h2>
+            <div class="reviews__buttons">
+              <a href="" class="make-review-text-btn">
+                <span>Оставить отзыв</span>
+              </a>
+              <a href="#" class="gray-empty-btn">
+                <span>Больше отзывов</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="reviews__wrapper">
+            <div class="row">
+              <div class="col-xl-3">
+                <div class="review-cart">
+                  <div class="review-cart__heading">
+                    <span>Порадовала работа менеджеров и желание помочь в выборе шин конкретно для наших целей</span>
+                  </div>
+                  <div class="review-cart__body">
+                    <p>
+                      Мы всегда предлагаем Вам приехать к нам на склад в Москве и самостоятельно выбрать шины. Если
+                      такой возможности нет, вы находитесь в регионе - высылаем подробные фото отгружаемых шин редлагаем
+                    </p>
+                  </div>
+                  <div class="review-cart__btn">
+                    <a href="#">Читать отзыв полностью</a>
+                  </div>
+                  <div class="review-cart__gallery">
+                    <a href="#" class="review-cart__photo">
+                      <img src="https://picsum.photos/200/300" alt="" />
+                    </a>
+                    <a href="#" class="review-cart__photo">
+                      <img src="https://picsum.photos/200/300" alt="" />
+                    </a>
+                    <a href="#" class="review-cart__photo">
+                      <img src="https://picsum.photos/200/300" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3">
+                <div class="review-cart">
+                  <div class="review-cart__heading">
+                    <span>Порадовала работа менеджеров и желание помочь в выборе шин конкретно для наших целей</span>
+                  </div>
+                  <div class="review-cart__body">
+                    <p>
+                      Мы всегда предлагаем Вам приехать к нам на склад в Москве и самостоятельно выбрать шины. Если
+                      такой возможности нет, вы находитесь в регионе - высылаем подробные фото отгружаемых шин редлагаем
+                    </p>
+                  </div>
+                  <div class="review-cart__btn">
+                    <a href="#">Читать отзыв полностью</a>
+                  </div>
+                  <div class="review-cart__gallery">
+                    <a href="#" class="review-cart__photo">
+                      <img src="https://picsum.photos/200/300" alt="" />
+                    </a>
+                    <a href="#" class="review-cart__photo">
+                      <img src="https://picsum.photos/200/300" alt="" />
+                    </a>
+                    <a href="#" class="review-cart__photo">
+                      <img src="https://picsum.photos/200/300" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3">
+                <div class="review-cart">
+                  <div class="review-cart__heading">
+                    <span>Порадовала работа менеджеров и желание помочь в выборе шин конкретно для наших целей</span>
+                  </div>
+                  <div class="review-cart__body">
+                    <p>
+                      Мы всегда предлагаем Вам приехать к нам на склад в Москве и самостоятельно выбрать шины. Если
+                      такой возможности нет, вы находитесь в регионе - высылаем подробные фото отгружаемых шин редлагаем
+                    </p>
+                  </div>
+                  <div class="review-cart__btn">
+                    <a href="#">Читать отзыв полностью</a>
+                  </div>
+                  <div class="review-cart__gallery">
+                    <a href="#" class="review-cart__photo">
+                      <img src="https://picsum.photos/200/300" alt="" />
+                    </a>
+                    <a href="#" class="review-cart__photo">
+                      <img src="https://picsum.photos/200/300" alt="" />
+                    </a>
+                    <a href="#" class="review-cart__photo">
+                      <img src="https://picsum.photos/200/300" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3">
+                <div class="review-cart">
+                  <div class="review-cart__heading">
+                    <span>Порадовала работа менеджеров и желание помочь в выборе шин конкретно для наших целей</span>
+                  </div>
+                  <div class="review-cart__body">
+                    <p>
+                      Мы всегда предлагаем Вам приехать к нам на склад в Москве и самостоятельно выбрать шины. Если
+                      такой возможности нет, вы находитесь в регионе - высылаем подробные фото отгружаемых шин редлагаем
+                    </p>
+                  </div>
+                  <div class="review-cart__btn">
+                    <a href="#">Читать отзыв полностью</a>
+                  </div>
+                  <div class="review-cart__gallery">
+                    <a href="#" class="review-cart__photo">
+                      <img src="https://picsum.photos/200/300" alt="" />
+                    </a>
+                    <a href="#" class="review-cart__photo">
+                      <img src="https://picsum.photos/200/300" alt="" />
+                    </a>
+                    <a href="#" class="review-cart__photo">
+                      <img src="https://picsum.photos/200/300" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <seciond id="about" class="about">
+        <div class="about__wrapper">
+          <div class="container">
+            <div class="about__body">
+              <div class="about__heading">
+                <h2 class="heading-first-type">
+                  Rocket shina - работаем с 2010 года принося пользу нашим клиентам
+                </h2>
+                <div class="about__subtitle">
+                  <p>
+                    Мы всегда предлагаем Вам приехать к нам на склад в Москве и самостоятельно выбрать шины. Если такой
+                    возможности нет, вы находитесь в регионе - высылаем подробные
+                  </p>
+                </div>
+                <div class="about__picture" style="background-image: url(../../img/general/about.png);"></div>
+              </div>
+
+              <div class="about__block">
+                <div class="about-box__head">
+                  <img src="../../img/general/about2.png" alt="" />
+                </div>
+                <div class="about-box__intro">
+                  <p>
+                    Мы всегда предлагаем Вам приехать к нам на склад в Москве и самостоятельно выбрать шины. Если такой
+                    возможности нет, вы находитесь в регионе - высылаем подробные фото отгружаемых
+                  </p>
+                </div>
+                <div class="about-box__btn">
+                  <a href="">
+                    <span>О компании</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </seciond>
+
+      <section id="offer" class="offer">
+        <div class="container">
+          123
+        </div>
+      </section>
     </div>
     <!-- end main wrapper -->
     <footer class="footer">
-      footer
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            footer
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="js/bundle.js"></script>

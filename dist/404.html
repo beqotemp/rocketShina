@@ -9,14 +9,239 @@
     <link rel="stylesheet" href="css/style.bundle.css" />
     <title>404 | Project</title>
   </head>
-  <body class="Site">
+  <body id="site" class="Site">
     <!-- main wrapper -->
     <div id="app" class="wrapper">
-      header
+      <div class="navigation">
+        <div class="navigation__first">
+          <div class="container">
+            <div class="navbar">
+              <div class="navbar__logo">
+                <a href="#">
+                  <img src="../../img/general/logo.svg" alt="" />
+                </a>
+              </div>
+              <div class="navbar__catalog">
+                <div id="catalog-button" class="catalog-button">
+                  <div class="catalog-button__body">
+                    <div class="catalog-button__icon">
+                      <button id="navbar-burger-desk" class="navbar-burger" type="button">
+                        <div class="navbar-burger__box">
+                          <span class="navbar-burger__inner"></span>
+                        </div>
+                      </button>
+                    </div>
+                    <div class="catalog-button__intro">
+                      <span>Каталог товаров</span>
+                    </div>
+                  </div>
+                  <div class="catalog-button__collapse">
+                    <div class="catalog-button__list">
+                      <a href="#" class="catalog-button__list-item">Все шины</a>
+                      <a href="#" class="catalog-button__list-item">Грузовые шины</a>
+                      <a href="#" class="catalog-button__list-item">Крупногабаритные шины</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="navbar__search">
+                <div class="navbar-search">
+                  <div class="navbar-search__body">
+                    <div class="search-svg"></div>
+                    <input type="search" placeholder="Поиск по сайту" />
+                    <div class="navbar-search__button-search">
+                      <div class="arrow-svg"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="navbar__lang">
+                <div class="navbar-lang">
+                  <a href="#">
+                    EN
+                  </a>
+                </div>
+              </div>
+              <div class="navbar__number">
+                <div class="navbar-number">
+                  <a href="tel:+79656546756" class="number-button">+7 (965) 654-67-56</a>
+                </div>
+              </div>
+              <div class="navbar__collapse-burger">
+                <div id="navbar-collapse-burger" class="navbar-collapse-burger">
+                  <div class="navbar-collapse-burger__body">
+                    <div class="navbar-collapse-burger__icon">
+                      <button id="navbar-burger-mob" class="navbar-burger" type="button">
+                        <div class="navbar-burger__box">
+                          <span class="navbar-burger__inner"></span>
+                        </div>
+                      </button>
+                    </div>
+                    <div id="collapse-burger__intro" class="navbar-collapse-burger__intro">
+                      <span class="menu">Меню</span>
+                      <span class="close">Закрыть</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navigation__second">
+          <div id="navigation__collapse" class="navigation__collapse">
+            <div class="container">
+              <nav class="main-nav" id="main-nav">
+                <div class="main-nav__mob">
+                  <a href="#" class="main-nav__item">
+                    <span>Все шины</span>
+                  </a>
+                  <a href="#" class="main-nav__item">
+                    <span>Крупногабаритные шины</span>
+                  </a>
+                  <a href="#" class="main-nav__item">
+                    <span>Грузовые шины</span>
+                  </a>
+                </div>
+                <a href="#" class="main-nav__item">
+                  <span>О компании</span>
+                  <div class="nav-loading">
+                    <div class="nav-loading__body">
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="main-nav__item">
+                  <span>Доставка и оплата</span>
+                  <div class="nav-loading">
+                    <div class="nav-loading__body">
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                    </div>
+                  </div>
+                </a>
+                <!-- <a href="#" class="main-nav__item">
+                        <span>Доставка и оплата</span>
+                        <div class="nav-loading">
+                            <div class="nav-loading__body">
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-nav__item">
+                        <span>Доставка и оплата</span>
+                        <div class="nav-loading">
+                            <div class="nav-loading__body">
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-nav__item">
+                        <span>Доставка и оплата</span>
+                        <div class="nav-loading">
+                            <div class="nav-loading__body">
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-nav__item">
+                        <span>Доставка и оплата</span>
+                        <div class="nav-loading">
+                            <div class="nav-loading__body">
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="main-nav__item">
+                        <span>Доставка и оплата</span>
+                        <div class="nav-loading">
+                            <div class="nav-loading__body">
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                                <div class="asterick-svg"></div>
+                            </div>
+                        </div>
+                    </a> -->
+                <a href="#" class="main-nav__item">
+                  <span>Дилерам и оптовым клиентам </span>
+                  <div class="nav-loading">
+                    <div class="nav-loading__body">
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="main-nav__item">
+                  <span>Растаможка шин</span>
+                  <div class="nav-loading">
+                    <div class="nav-loading__body">
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="main-nav__item">
+                  <span>Отзывы</span>
+                  <div class="nav-loading">
+                    <div class="nav-loading__body">
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="main-nav__item">
+                  <span>Статьи</span>
+                  <div class="nav-loading">
+                    <div class="nav-loading__body">
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="main-nav__item">
+                  <span>Контакты</span>
+                  <div class="nav-loading">
+                    <div class="nav-loading__body">
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                      <div class="asterick-svg"></div>
+                    </div>
+                  </div>
+                </a>
+              </nav>
+              <div class="navbar__lang-mob">
+                <a href="#">
+                  <span>Switch to english version</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- end main wrapper -->
     <footer class="footer">
-      footer
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            footer
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="js/bundle.js"></script>

@@ -145,12 +145,15 @@
     line-height: 62px;
     @media screen and (max-width: $beforeDesktopWidth) {            // max 1200
         font-size: 39px;
+        line-height: 52px;
     }
     @media screen and (max-width: $beforeSmDesktopWidth) {    // 991
         font-size: 39px;
+        line-height: 52px;
     }
     @media screen and (max-width: $beforeTableWidth) {        // max 767    
         font-size: 25px;
+        line-height: 35px;
     }
     
 }
