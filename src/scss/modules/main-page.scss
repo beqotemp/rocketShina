@@ -312,32 +312,98 @@
 // Products preview
 .truck-preview {
     margin-top: 45px;
+    @media screen and (max-width: $beforeTableWidth) {        // max 767
+        margin-top: 63px;
+    }
     &__heading {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        & .yellow-square-big {
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                display: none;
+            }
+        }
     }
     &__wrapper {
         margin-top: 107px;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            margin-top: 31px;
+        }
+    }
+    &__mobile-btn {
+        margin-top: 10px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        @media screen and (min-width: $tableWidth) {        // max 767
+            display: none;
+        }
     }
 }
 .oversized-preview {
     margin-top: 145px;
+    @media screen and (max-width: $beforeTableWidth) {        // max 767
+        margin-top: 50px;
+    }
+    &__mobile-btn {
+        margin-top: 10px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        @media screen and (min-width: $tableWidth) {        // max 767
+            display: none;
+        }
+        & a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 320px;
+            height: 60px;
+            background-color: #FAC400;
+            & span {
+                font-family: $AR;
+                font-size: 11px;
+                color: #2F2F2F;
+            }
+        }
+    }
     &__heading {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        & .yellow-square-big {
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                display: none;
+            }
+        }
     }
     &__wrapper {
         margin-top: 107px;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            margin-top: 30px;
+        }
     }
 }
 .product {
     margin-bottom: 80px;
+    @media screen and (max-width: $beforeTableWidth) {        // max 767
+        margin-bottom: 25px;
+    }
     &:hover &__title  {
         color: #E3B200;
+    }
+    &__wrapp {
+        flex: 0 0 25%;
+        max-width: 25%;
+        padding: 0 15px;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
     }
     &__body{
         display: flex;
@@ -350,6 +416,9 @@
         & img {
             max-width: 100%;
             height: 200px;
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                height: 140px;
+            }
         }
     }
     &__heading{
@@ -357,12 +426,20 @@
         overflow: hidden;
         margin-top: 44px;
         border-bottom: 1px solid #DEDEDE;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            margin-top: 5px;
+            height: 45px;
+        }
     }
     &__title{
         font-family: $AR;
         font-size: 17px;
         color: #000000;
         transition:.3s;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            font-size: 10px;
+            line-height: 15px;
+        }
 
     }
     &__intro{
@@ -370,6 +447,9 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            margin-top: 7px;
+        }
     }
     &__spec{
         font-family: $AR;
@@ -379,6 +459,10 @@
         &:last-child{
             margin-right: 0;
         }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            font-size: 8px;
+            margin-right: 15px;
+        }
     }
     &__footer {
         margin-top: 33px;
@@ -386,6 +470,9 @@
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            margin-top: 10px;
+        }
     }
 }
 .product-price {
@@ -408,11 +495,15 @@
 
     }
     &__discount {
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            display:none;
+        }
         & span {
             font-family: $AR;
             font-size: 11px;
             color:#000000;
             text-decoration: line-through;
+            
         }
         & .rub-svg {
             background-color: #000;
@@ -422,16 +513,26 @@
         }
     }
     &__main {
+        display: flex;
+        align-items: center;
         & span {
             font-family: $AR;
             font-size: 18px;
             color:#000000;
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                font-size: 10px;
+            }
         }
         & .rub-svg {
             background-color: #000;
-            margin-top: -2px;
             height: 15px;
             width: 10px;
+            margin-left: 4px;
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                height: 7px;
+                width: 9px;
+                margin-left: 0;
+            }
         }
     }
 }
@@ -444,11 +545,27 @@
     background: rgba(238, 238, 238, 0.39);
     padding-top: 120px;
     padding-bottom: 62px;
+    @media screen and (max-width: $beforeTableWidth) {        // max 767
+        margin-top: 60px;
+        padding-top: 55px;
+    }
     &__heading {
         width: 40%;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            width: 220px;
+            margin: 0 auto;
+        }
+        & .heading-first-type {
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                text-align: center;
+            }
+        }
     }
     &__wrapper {
         margin-top: 115px;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            margin-top: 40px;
+        }
     }
 }
 .benefit {
@@ -456,6 +573,23 @@
     flex-direction: column;
     padding-right: 20px;
     margin-bottom: 55px;
+    @media screen and (max-width: $beforeTableWidth) {        // max 767
+        margin-bottom: 40px;
+        padding-right: 0;
+    }
+    @media screen and (max-width: $beforePhoneWidth) {        // max 767
+        text-align: center;
+    }
+    &__wrapp {
+        flex: 0 0 25%;
+        padding: 0 15px;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            flex: 0 0 50%;
+        }
+        @media screen and (max-width: $beforePhoneWidth) {        // max 767
+            flex: 0 0 100%;
+        }
+    }
     &__head {
         display: flex;
         justify-content: center;
@@ -464,24 +598,42 @@
         & img {
             height: 121px;
             max-width: 100%;
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                height: 110px;
+            }
         }
     }
     &__heading {
         margin-top: 46px;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            margin-top: 10px;
+        }
+        @media screen and (max-width: $beforePhoneWidth) {        // max 480
+            margin-top: 19px;
+        }
         & span {
             font-family: $AR;
             font-size: 18px;
             line-height: 22px;
             color: #000;
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                font-size: 16px;
+            }
         }
     }
     &__body {
         margin-top: 20px;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            margin-top: 16px;
+        }
         & p {
             font-family: $GR;
             font-size: 13px;
             color: #434343;
             line-height: 21px;
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                font-size: 12px;
+            }
         }
     }
 }
@@ -490,52 +642,102 @@
 .reviews {
     background-color: #EEEEEE;    
     padding-bottom: 123px;
+    
     &__heading {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         padding-top: 112px;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            padding-top: 59px;
+        }
     }
     &__wrapper {
         margin-top: 55px;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            margin-top: 35px;
+        }
     }
     &__buttons {
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            display: none;
+        }
         & .make-review-text-btn {
             margin-right: 52px;
+        }
+    }
+    &__mobile-btn {
+        margin-top: 10px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        @media screen and (min-width: $tableWidth) {        // max 767
+            display: none;
         }
     }
 }
 .review-cart {
     background-color: #fff;
-    padding: 35px 25px;
+    padding: 30px 37px;
     margin-bottom: 17px;
+    @media screen and (max-width: $beforeTableWidth) {        // max 767
+        font-size: 16px;
+        line-height: 27px;
+    }
+    &__wrapp {
+        flex: 0 0 25%;
+        padding: 0 15px;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            flex: 0 0 50%;
+        }
+        @media screen and (max-width: $beforePhoneWidth  ) {        // max 767
+            flex: 0 0 100%;
+        }
+    }
     &__heading {
         span {
             font-family: $AR;
             font-size: 15px;
             color:#171717;
             line-height:25px;
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                font-size: 16px;
+                line-height: 27px;
+            }
         }
     }
     &__body {
         margin-top: 12px;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            margin-top: 17px;
+        }
         p {
             font-family: $GR;
             font-size: 13px;
             line-height: 22px;
             color: #434343;
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                font-size: 12px;
+            }
         }
     }
     &__btn {
         margin-top: 20px;
         padding-bottom: 20px;
         border-bottom: 1px solid #DFDFDF;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            margin-top: 13px;
+        }
         a {
             font-family: $AR;
             font-size: 13px;
             color:#171717;
             transition: .3s;
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                font-size: 12px;
+            }
             &:hover {
                 opacity: .7;
             }
@@ -792,6 +994,9 @@
     &__wrapper {
         display: flex;
         height: 100%;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            flex-direction: column;
+        }
     }
     & .container {
         height:100%;
@@ -801,6 +1006,9 @@
     display: flex;
     flex:0 0 50%;
     padding-top: 110px;
+    @media screen and (max-width: $beforeTableWidth) {        // max 767
+        flex: 0 0 100%;
+    }
     &__body {
         display: flex;
         flex-direction: column;
@@ -855,6 +1063,10 @@
     flex:0 0 50%;
     position: relative;
     height: 100%;
+    @media screen and (max-width: $beforeTableWidth) {        // max 767
+        flex: 0 0 100%;
+        height: 340px;
+    }
     &__item {
         background-size: cover;
         height: 100%;
@@ -911,18 +1123,16 @@
         margin-top: 70px;
     }
 }
-.articles-row {
-    display:flex;
-    justify-content: space-between;
-    flex-wrap: wrap;    
-}
+
 .article-cart {
     &:hover &__body {
         border-color:#5E5E5E;
     }
     &__wrapp {
         display: flex;
-        flex: 0 0 29.7%;        
+        flex: 0 0 33.3%;
+        max-width: 33.33%;
+        padding: 0 15px;
     }
     margin-bottom: 49px;
     &__body{

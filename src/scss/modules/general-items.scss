@@ -67,6 +67,10 @@
     font-size: 13px;
     color: #2F2F2F;
     transition: .3s;
+    @media screen and (max-width: $beforeTableWidth) {        // max 767
+        font-size: 11px;
+        margin-top: 28px;
+    }
     &:hover {
         opacity: .7;
     }
@@ -95,6 +99,53 @@
         }
     }
 }
+.more-reviews-mobile-btn {
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 320px;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid #1B1B1B;
+    transition:.3s;
+    & span {
+        font-size: 14px;
+        font-family: $AR;   
+        color: #1B1B1B;
+        transition:.3s;
+    }
+    &:hover {
+        border-color: #FAC400;
+        background-color: #FAC400;
+        & span {
+            color: #2F2F2F;
+        }
+    }
+}
+.more-products-mobile-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 320px;
+    height: 60px;
+    background-color: #FAC400;
+    transition:.3s;
+    & span {
+        font-family: $AR;
+        font-size: 11px;
+        color: #2F2F2F;
+        transition:.3s;
+    }
+    &:hover {
+        background-color: #272727;
+        & span {
+            color: #fff;
+        }
+    }
+}
 .buy-button {
     cursor: pointer;
     display: inline-flex;
@@ -103,11 +154,17 @@
     padding: 18px 54px;
     background-color: #DEDEDE;
     transition:.3s;
+    @media screen and (max-width: $beforeTableWidth) {        // max 767
+        padding: 6px 29px;
+    }
     & span {
         font-size: 13px;
         font-family: $AR;   
         color: #2F2F2F;
         transition:.3s;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            font-size: 9px;
+        }
     }
     &:hover {
         background-color: #FAC400;

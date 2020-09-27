@@ -9,49 +9,14 @@ html {
   font-size: $mainFontSize;
   color: $mainFontColor;
   height: 100%;
-
-  @media screen and (min-width: $desktopWidth) {            // min 1200
-		font-size: 18px;
-  }
-  @media screen and (max-width: $beforeDesktopWidth) {            // max 1999
-		font-size: 18px;
-  }
-  @media screen and (min-width: $smDesktopWidth ) {         // 991
-    font-size: 16px;
-  }
-  @media screen and (max-width: $beforeSmDesktopWidth) {    // 991
-    font-size: 16px;
-  }
-  @media screen and (min-width: $tableWidth) {              // min 768
-    font-size: 15px;
-  }
-  @media screen and (max-width: $beforeTableWidth) {        // max 767
-    font-size: 15px;
-  }
-  @media screen and (min-width: $bigPhoneWidth) {           // max 575
-    font-size: 15px;
-  }
-  @media screen and (max-width: $beforeBigPhoneWidth) {     // max 575
-    font-size: 15px;
-  }
-  @media screen and (min-width: $phoneWidth) {                // min 480
-		font-size: 14px;
-  }
-  @media screen and (max-width: $beforePhoneWidth) {        // max 479
-		font-size: 14px;
-  }
-
-  @media screen and (max-width: $smPhoneWidth) {             // max 325
-		font-size: 12px;
-  }
 }
 body {
   // *** Main page
-  background: url(/img/workspace/main-page1440.png);
+  // background: url(/img/workspace/main-page1440.png);
   // background: url(/img/workspace/main-page991.png);
   // background: url(/img/workspace/main-page720.png);
   // background: url(/img/workspace/main-page320.png);
-
+  
   // *** Main page
   
 
@@ -86,16 +51,31 @@ section {
 }
 // grid update
 .container {
-  
-  @media screen and (min-width: $tableWidth) and (max-width: $beforeSmDesktopWidth) {        
-    max-width: 750px;
-  }
-  @media screen and (min-width: $smDesktopWidth) and (max-width: $beforeDesktopWidth) {        
-    max-width: 980px;
-  }
-  @media screen and (min-width: $desktopWidth) {            // min 1200
-		max-width: 1269px;
-  }
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    @media (min-width: $bigPhoneWidth){
+      max-width: 540px;
+    }  
+    @media (min-width: $smDesktopWidth) and (max-width: $beforeDesktopWidth) {        
+      max-width: 980px;
+    }
+    @media (min-width: $tableWidth) and (max-width: $beforeSmDesktopWidth) {        
+      max-width: 750px;
+    }
+    
+    @media (min-width: $desktopWidth) {
+      max-width: 1269px;
+    }
+   
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 // Modules
 
