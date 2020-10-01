@@ -1,0 +1,31 @@
+.articles {
+    margin-top: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    @media screen and (max-width: $beforeTableWidth) {        // max 767
+        border-top: none;
+        margin-top: 0;
+    }
+    &__heading {
+        margin-top: 120px;
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 767
+            margin-top: 90px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            margin-top: 80px;
+        }
+    }
+    &__wrapper {
+        padding-top: 79px;
+        padding-bottom: 132px;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            padding-top: 59px;
+            padding-bottom: 60px;
+        }
+        .catalog__preloader {
+            margin-top: 46px;
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                margin-top: 10px;
+            }
+        }
+    }
+}

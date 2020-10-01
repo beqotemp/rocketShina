@@ -17,8 +17,43 @@ body {
   // background: url(/img/workspace/main-page720.png);
   // background: url(/img/workspace/main-page320.png);
   
-  // *** Main page
+  // *** Catalog
+  // background: url(/img/workspace/catalog1440.png);
+  // background: url(/img/workspace/catalog991.png);
+  // background: url(/img/workspace/catalog720.png);
+  // background: url(/img/workspace/menu-collapse14440.png);
+  // background: url(/img/workspace/menu-collapse320.png);
+
+  // *** blog
+  // background: url(/img/workspace/blog1440.png);
+
+  // *** Article
+  // background: url(/img/workspace/article1440.png);
+  // background: url(/img/workspace/article991.png);
+  // background: url(/img/workspace/article720.png);
+  // background: url(/img/workspace/article320.png);
   
+  // *** About 
+  // background: url(/img/workspace/about1440.png);
+  // background: url(/img/workspace/about991.png);
+  // background: url(/img/workspace/about720.png);
+  // background: url(/img/workspace/about320.png);
+
+  // *** Search
+  // background: url(/img/workspace/search1440.png);
+  // background: url(/img/workspace/search-result1440.png);
+  // background: url(/img/workspace/search-result991.png);
+  // background: url(/img/workspace/search-result720.png);
+  // background: url(/img/workspace/search-result320.png);
+
+  // *** Contacts
+  // background: url(/img/workspace/search1440.png);
+  background: url(/img/workspace/con1440.png);
+  // background: url(/img/workspace/con991.png);
+  // background: url(/img/workspace/con720.png);
+  // background: url(/img/workspace/con320.png);
+
+
 
   background-size: cover;
   //dev
@@ -33,6 +68,7 @@ body {
   &.overflow {
     overflow: hidden;
     position: relative;
+    height: 100%;
   }
   
 }
@@ -80,8 +116,15 @@ section {
 // Modules
 
 @import "modules/main-page.scss";
+@import "modules/catalog.scss";
 @import "modules/navbar.scss";
 @import "modules/promo.scss";
 @import "modules/footer.scss";
 @import "modules/general-items.scss";
+@import "modules/blog.scss";
+@import "modules/article-page.scss";
+@import "modules/reviews.scss";
+@import "modules/about.scss";
+@import "modules/search.scss";
+@import "modules/contacts.scss";
 @import "modules/404.scss"

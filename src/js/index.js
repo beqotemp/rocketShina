@@ -7,6 +7,7 @@
 // import './scripts/azazlyst'
 import "./scripts/menu";
 import "./scripts/slider";
+import "./scripts/scrollbar";
 
 
 // // Vue

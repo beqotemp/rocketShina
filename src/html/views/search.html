@@ -1,0 +1,75 @@
+<% var data = {
+    title: "Main Page | Project",
+  }; %>
+  
+  
+<%= _.template(require('./../includes/head.html'))(data) %>
+<%= _.template(require('./../includes/promo.html'))(data) %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<section id="search-result" class="search-result">
+    <div class="container">
+        <div class="search-result__wrapper">
+            <div class="search-result__button">
+                <a href="">
+                    <div class="full-arrow-svg"></div>
+                    <span>Вернуться</span>
+                </a>
+            </div>
+            <div class="search-result__body">
+                <div class="search-result__heading">
+                    <span>По запросу “грузовые шины бу” найдено результатов: 3</span>
+                </div>
+                <div class="search-result__results">
+                    <div class="search-result__item">
+                        <div class="search-result__preview">
+                            <img src="../../img/products/product.png" alt="">
+                        </div>
+                        <div class="search-result__intro">
+                            <div class="search-result__title">
+                                <span>Грузовая шина TYREX ALL STEEL TR-1 R22.5 385/65</span>
+                            </div>
+                            <div class="search-result__specs">
+                                <div class="search-result__spec search-result__price">
+                                    <span>18 980</span>
+                                    <div class="rub-svg"></div>
+                                </div>
+                                <div class="search-result__spec">
+                                    <span>В наличии</span>
+                                </div>
+                                <div class="search-result__spec">
+                                    <span>Новые</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<section id="nothing-found" class="nothing-found" style="display: none;">
+    <div class="container">
+        <div class="nothing-found__wrapper">
+            <div class="nothing-found__body">
+                <div class="nothing-found__picture">
+                    <img src="../../img/general/nothing-found.png" alt="">
+                </div>
+                <div class="nothing-found__title">
+                    <span>По запросу “грузовые шины бу r2d2”: Ничего не найдено</span>
+                </div>
+                <div class="nothing-found__button">
+                    <a href="">
+                        <div class="full-arrow-svg"></div>
+                        <span>Вернуться</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

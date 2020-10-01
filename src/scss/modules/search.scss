@@ -1,0 +1,331 @@
+
+.search-result {
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    margin-top: 31px;
+    @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+        margin-top: 23px;
+    }
+    @media screen and (max-width: $beforeTableWidth) {        // max 767
+        margin-top: 0;
+        border: none;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        padding-top: 71px;
+        padding-bottom: 140px;
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            padding-top: 58px;
+        }
+        @media screen and (max-width:$beforeSmDesktopWidth ) {        // max 991
+            flex-direction: column;
+            padding-top: 62px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            padding-top: 73px;
+            padding-bottom: 70px;
+        }
+
+    }
+    &__button{
+        flex: 0 0 20.5%;
+        max-width: 20.5%;
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            flex: 0 0 18.5%;
+            max-width: 18.5%;
+        }
+        @media screen and (max-width:$beforeSmDesktopWidth ) {        // max 991
+            flex: unset;
+            max-width: unset;
+        }
+        a {
+            .full-arrow-svg {
+                height: 12px;
+                width: 12px;
+                background-color: #757575;
+                @media screen and (max-width: $beforeTableWidth) {        // max 767
+                    height: 9px;
+                    width: 13px;
+                }
+            }
+            span {
+                font-family: $AR;
+                font-size: 13px;
+                color: #757575;
+                transition: .3s;
+                margin-left: 10px;
+                @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+                    font-size: 11px;
+                    line-height: 13px;
+                }
+                @media screen and (max-width: $beforeTableWidth) {        // max 767
+                    margin-left: 1px;
+                }
+            }
+            &:hover {
+                span {
+                    opacity: .7;
+                }
+            }
+        }
+    }
+    &__body {
+        flex: 0 0 57.5%;
+        max-width: 57.5%;
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            flex: 0 0 66.5%;
+            max-width: 66.5%;
+        }
+        @media screen and (max-width:$beforeSmDesktopWidth ) {        // max 991
+            flex: unset;
+            max-width: unset;
+            padding-top: 42px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            padding-top: 10px;
+        }
+    }
+    &__heading {
+        span {
+            font-family: $AR;
+            font-size: 23px;
+            color: #000;
+            @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+                font-size: 17px;
+            }
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                font-size: 14px;
+            }
+        }
+    }
+    &__results {
+        display: flex;
+        flex-direction: column;
+        padding-top: 79px;
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            padding-top: 52px;
+        }
+        @media screen and (max-width:$beforeSmDesktopWidth ) {        // max 991
+            padding-top: 53px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            padding-top: 39px;
+        }
+    }
+    &__item {
+        border-top: 1px solid #DFDFDF;
+        padding-top: 19px;
+        margin-bottom: 20px;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            margin-bottom: 15px;
+        }
+        @media screen and (max-width:$beforeSmDesktopWidth ) {        // max 991
+            padding-top: 19px;
+            margin-bottom: 16px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            padding-top: 10px;
+            margin-bottom: 9px;
+        }
+    }
+    &__preview {
+        img {
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                height: 60px;
+                width: 60px;
+                min-width: 60px;
+            }
+        }
+    }
+    &__intro {
+        margin-left: 40px;
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            margin-left: 48px;
+        }
+        @media screen and (max-width:$beforeSmDesktopWidth ) {        // max 991
+            margin-left: 53px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            margin-left: 11px;
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+    }
+    &__title {
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        
+        span{
+            font-family: $AR;
+            font-size: 18px;
+            color: #000;
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                font-size: 11px;
+            }
+        }
+    }
+    &__specs {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+
+    }
+    &__spec {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-right: 24px;
+        &:last-child {
+            margin-right: 0;
+        }
+        span{
+            font-family: $AR;
+            font-size: 11px;
+            color: #282828;
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                font-size: 9px;
+            }
+        }
+    }
+    &__price {
+        span {
+            font-family: $AR;
+            font-size: 13px;
+            color: #000000;
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                font-size: 9px;
+            }
+        }
+        & .rub-svg {
+            background-color: #000;
+            height: 10px;
+            width: 10px;
+            margin-left: 4px;
+            @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+                height: 10px;
+                margin-left: 1px;
+            }
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                height: 7px;
+                width: 9px;
+                margin-left: 0;
+            }
+        }
+    }
+
+}
+.nothing-found {
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    margin-top: 30px;
+    @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+        margin-top: 22px;
+    }
+    @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
+        margin-top: 20px;
+    }
+    @media screen and (max-width: $beforeTableWidth) {        // max 767
+        border: none;
+        margin-top: 0;
+    }
+    &__wrapper {
+        padding-top: 171px;
+        padding-bottom: 206px;
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            padding-top: 100px;
+            padding-bottom: 130px;
+        }
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
+            padding-top: 80px;
+            padding-bottom: 100px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    }
+    &__body {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            width: 90%;
+        }
+    }
+    &__picture {
+        img {
+            height: 200px;
+            @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+                height: 158px;
+            }
+        }
+    }
+    &__title {
+        text-align: center;
+        margin-top: 26px;
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            margin-top: 10px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            margin-top: 15px;
+        }
+        span {
+            margin-left: 10px;
+            font-family: $AR;
+            font-size: 17px;
+            line-height: 28px;
+            color: #000000;
+            @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+                font-size: 12px;
+                line-height: 21px;
+            }
+            @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
+                font-size: 12px;
+                line-height: 22px;
+            }
+        }
+    }
+    &__button {
+        margin-top: 20px;
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            margin-top: 10px;
+        }
+        a {
+            .full-arrow-svg {
+                height: 12px;
+                width: 12px;
+                background-color: #757575;
+            }
+            span {
+                font-family: $AR;
+                font-size: 13px;
+                color: #757575;
+                transition: .3s;
+                margin-left: 10px;
+                @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+                    font-size: 11px;
+                    line-height: 13px;
+                }
+            }
+            &:hover {
+                span {
+                    opacity: .7;
+                }
+            }
+        }
+    }
+}

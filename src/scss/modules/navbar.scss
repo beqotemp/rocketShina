@@ -3,7 +3,7 @@
     @media screen and (max-width: $beforeTableWidth) {        // max 767
         display: flex;
         flex-direction: column;
-        z-index: 2;
+        z-index: 99;
     }
     &__first {
         display: flex;
@@ -33,7 +33,7 @@
             width: 100%;
             position: relative;
             margin: 0;
-            z-index: 2;
+            z-index: 99;
         }
     }
     &__collapse-button {
@@ -43,6 +43,7 @@
         width: 149px;
         height: 100%;
         background-color: #FAC400;
+        
     }
     &__collapse {
         @media screen and (max-width: $beforeTableWidth) {        // max 767
@@ -395,14 +396,14 @@
     }
     &__collapse {
         width: 100%;
-        background-color: #F3F3F3;
+        background-color: #ffffff;
         position: absolute;
         top: 0%;
         z-index: 1;
         opacity: 0;
         visibility: hidden;
         transition: .4s;
-        
+        z-index: 99;
     }
     &__list {
         display:flex;

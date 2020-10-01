@@ -1,6 +1,5 @@
 <% var data = {
   title: "Main Page | Project",
-  author: "Harrix" 
 }; %>
 
 
@@ -112,7 +111,7 @@
       </a>
     </div>
     <div class="oversized-preview__wrapper">
-      <div class="row">
+      <div class="row mp-product-row">
 
         <%= _.template(require('./../includes/product-card.html'))(data) %>
         <%= _.template(require('./../includes/product-card.html'))(data) %>
@@ -140,7 +139,7 @@
       </a>
     </div>
     <div class="truck-preview__wrapper">
-      <div class="row">
+      <div class="row mp-product-row">
         <%= _.template(require('./../includes/product-card.html'))(data) %>
         <%= _.template(require('./../includes/product-card.html'))(data) %>
         <%= _.template(require('./../includes/product-card.html'))(data) %>
@@ -264,126 +263,15 @@
     </div>
     
     <div class="reviews__wrapper">
-      <div class="row">
-        <div class="review-cart__wrapp">
-          <div class="review-cart">
-            <div class="review-cart__heading">
-              <span>Порадовала работа менеджеров и желание помочь в выборе шин конкретно для наших целей</span>
-            </div>
-            <div class="review-cart__body">
-              <p>
-                Мы всегда предлагаем Вам приехать к нам на склад 
-                в Москве и самостоятельно выбрать шины. Если такой 
-                возможности нет, вы находитесь в регионе - высылаем
-                подробные фото отгружаемых шин редлагаем
-                </p>
-            </div>
-            <div class="review-cart__btn">
-              <a href="#">Читать отзыв полностью</a>
-            </div>
-            <div class="review-cart__gallery">
-              <a href="#" class="review-cart__photo">
-                <img src="https://picsum.photos/200/300" alt="">
-              </a>
-              <a href="#" class="review-cart__photo">
-                <img src="https://picsum.photos/200/300" alt="">
-              </a>
-              <a href="#" class="review-cart__photo">
-                <img src="https://picsum.photos/200/300" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
+      <div class="row reviews-row">
+        
 
-        <div class="review-cart__wrapp">
-          <div class="review-cart">
-            <div class="review-cart__heading">
-              <span>Порадовала работа менеджеров и желание помочь в выборе шин конкретно для наших целей</span>
-            </div>
-            <div class="review-cart__body">
-              <p>
-                Мы всегда предлагаем Вам приехать к нам на склад 
-                в Москве и самостоятельно выбрать шины. Если такой 
-                возможности нет, вы находитесь в регионе - высылаем
-                подробные фото отгружаемых шин редлагаем
-                </p>
-            </div>
-            <div class="review-cart__btn">
-              <a href="#">Читать отзыв полностью</a>
-            </div>
-            <div class="review-cart__gallery">
-              <a href="#" class="review-cart__photo">
-                <img src="https://picsum.photos/200/300" alt="">
-              </a>
-              <a href="#" class="review-cart__photo">
-                <img src="https://picsum.photos/200/300" alt="">
-              </a>
-              <a href="#" class="review-cart__photo">
-                <img src="https://picsum.photos/200/300" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-cart__wrapp">
-          <div class="review-cart">
-            <div class="review-cart__heading">
-              <span>Порадовала работа менеджеров и желание помочь в выборе шин конкретно для наших целей</span>
-            </div>
-            <div class="review-cart__body">
-              <p>
-                Мы всегда предлагаем Вам приехать к нам на склад 
-                в Москве и самостоятельно выбрать шины. Если такой 
-                возможности нет, вы находитесь в регионе - высылаем
-                подробные фото отгружаемых шин редлагаем
-                </p>
-            </div>
-            <div class="review-cart__btn">
-              <a href="#">Читать отзыв полностью</a>
-            </div>
-            <div class="review-cart__gallery">
-              <a href="#" class="review-cart__photo">
-                <img src="https://picsum.photos/200/300" alt="">
-              </a>
-              <a href="#" class="review-cart__photo">
-                <img src="https://picsum.photos/200/300" alt="">
-              </a>
-              <a href="#" class="review-cart__photo">
-                <img src="https://picsum.photos/200/300" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-cart__wrapp">
-          <div class="review-cart">
-            <div class="review-cart__heading">
-              <span>Порадовала работа менеджеров и желание помочь в выборе шин конкретно для наших целей</span>
-            </div>
-            <div class="review-cart__body">
-              <p>
-                Мы всегда предлагаем Вам приехать к нам на склад 
-                в Москве и самостоятельно выбрать шины. Если такой 
-                возможности нет, вы находитесь в регионе - высылаем
-                подробные фото отгружаемых шин редлагаем
-                </p>
-            </div>
-            <div class="review-cart__btn">
-              <a href="#">Читать отзыв полностью</a>
-            </div>
-            <div class="review-cart__gallery">
-              <a href="#" class="review-cart__photo">
-                <img src="https://picsum.photos/200/300" alt="">
-              </a>
-              <a href="#" class="review-cart__photo">
-                <img src="https://picsum.photos/200/300" alt="">
-              </a>
-              <a href="#" class="review-cart__photo">
-                <img src="https://picsum.photos/200/300" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
+        <%= _.template(require('./../includes/review-cart.html'))(data) %>
+        <%= _.template(require('./../includes/review-cart.html'))(data) %>
+        <%= _.template(require('./../includes/review-cart.html'))(data) %>
+        <%= _.template(require('./../includes/review-cart.html'))(data) %>
+        <%= _.template(require('./../includes/review-cart.html'))(data) %>
+        <%= _.template(require('./../includes/review-cart.html'))(data) %>
 
       </div>
       <div class="reviews__mobile-btn">
@@ -497,39 +385,11 @@
       </a>
     </div>
     <div class="fresh-articles__wrapper">
-      <div class="row">
-
-        <div class="article-cart__wrapp">
-          <div class="article-cart">
-            <div class="article-cart__body">
-              <div class="article-cart__info">
-                <div class="article-cart__tags">
-                  <span>Растаможка</span>
-                </div>
-                <div class="article-cart__date">
-                  <span>01.07.2019</span>
-                </div>
-              </div>
-              <a href="#">
-                <div class="article-cart__preview" style="background-image: url(https://picsum.photos/200/300);"></div>
-              </a>
-              
-              <div class="article-cart__heading">
-                <a href="#">
-                  <h3 class="article-cart__title">
-                    Нюансы при перевозки шин через границу латвии
-                  </h3>
-                </a>
-              </div>
-              <div class="article-cart__intro">
-                <p>
-                  Мы всегда предлагаем Вам приехать к нам на склад в Москве и самостоятельно выбрать шины
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
+      <div class="row article-ro">
+        
+        <%= _.template(require('./../includes/article-preview.html'))(data) %>
+        <%= _.template(require('./../includes/article-preview.html'))(data) %>
+        <%= _.template(require('./../includes/article-preview.html'))(data) %>
         
         
       </div>

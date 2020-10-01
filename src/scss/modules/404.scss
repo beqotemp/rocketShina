@@ -1,0 +1,104 @@
+.fof-page {
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    margin-top: 30px;
+    @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+        margin-top: 22px;
+    }
+    @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
+        margin-top: 20px;
+    }
+    @media screen and (max-width: $beforeTableWidth) {        // max 767
+        border: none;
+        margin-top: 0;
+    }
+    &__wrapper {
+        padding-top: 171px;
+        padding-bottom: 206px;
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            padding-top: 100px;
+            padding-bottom: 130px;
+        }
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
+            padding-top: 80px;
+            padding-bottom: 100px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    }
+    &__body {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            width: 90%;
+        }
+    }
+    &__picture {
+        img {
+            height: 200px;
+            @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+                height: 158px;
+            }
+        }
+    }
+    &__title {
+        text-align: center;
+        margin-top: 26px;
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            margin-top: 20px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            margin-top: 20px;
+        }
+        span {
+            margin-left: 10px;
+            font-family: $AR;
+            font-size: 17px;
+            line-height: 28px;
+            color: #000000;
+            @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+                font-size: 12px;
+                line-height: 21px;
+            }
+            @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
+                font-size: 12px;
+                line-height: 22px;
+            }
+        }
+    }
+    &__button {
+        margin-top: 20px;
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            margin-top: 10px;
+        }
+        a {
+            .full-arrow-svg {
+                height: 12px;
+                width: 12px;
+                background-color: #757575;
+            }
+            span {
+                font-family: $AR;
+                font-size: 13px;
+                color: #757575;
+                transition: .3s;
+                margin-left: 10px;
+                @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+                    font-size: 11px;
+                    line-height: 13px;
+                }
+            }
+            &:hover {
+                span {
+                    opacity: .7;
+                }
+            }
+        }
+    }
+}

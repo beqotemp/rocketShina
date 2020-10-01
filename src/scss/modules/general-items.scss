@@ -1,4 +1,48 @@
+.vk-svg {
+    display: inline-block;
+    vertical-align: middle;
+    transition: 0.4s ease;
+    -webkit-mask: url(../img/svg/vk.svg) no-repeat center;
+    mask: url(../img/svg/vk.svg) no-repeat center;
+}
+.fa-svg {
+    display: inline-block;
+    vertical-align: middle;
+    transition: 0.4s ease;
+    -webkit-mask: url(../img/svg/fa.svg) no-repeat center;
+    mask: url(../img/svg/fa.svg) no-repeat center;
+}
+.twitter-svg {
+    display: inline-block;
+    vertical-align: middle;
+    transition: 0.4s ease;
+    -webkit-mask: url(../img/svg/twitter.svg) no-repeat center;
+    mask: url(../img/svg/twitter.svg) no-repeat center;
+}
 
+
+
+.full-arrow-svg {
+    display: inline-block;
+    vertical-align: middle;
+    transition: 0.4s ease;
+    -webkit-mask: url(../img/svg/full-arrow.svg) no-repeat center;
+    mask: url(../img/svg/full-arrow.svg) no-repeat center;
+}
+.minus-svg {
+    display: inline-block;
+    vertical-align: middle;
+    transition: 0.4s ease;
+    -webkit-mask: url(../img/svg/minus.svg) no-repeat center;
+    mask: url(../img/svg/minus.svg) no-repeat center;
+}
+.short-arrow-svg {
+    display: inline-block;
+    vertical-align: middle;
+    transition: 0.4s ease;
+    -webkit-mask: url(../img/svg/short-arrow.svg) no-repeat center;
+    mask: url(../img/svg/short-arrow.svg) no-repeat center;
+}
 .burger-svg {
     display: inline-block;
     width: 22px;
@@ -81,15 +125,22 @@
     justify-content: center;
     align-items: center;
     padding: 28px 0px;
-    width: 213px;
+    width: 216px;
     background-color: transparent;
     border: 1px solid #1B1B1B;
     transition:.3s;
+    @media screen and (max-width: $beforeTableWidth) {        // max 767
+        padding: 18.5px 0px;
+        width: 167px;
+    }
     & span {
         font-size: 13px;
         font-family: $AR;   
         color: #1B1B1B;
         transition:.3s;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            font-size: 11px;
+        }
     }
     &:hover {
         border-color: #FAC400;
@@ -154,6 +205,9 @@
     padding: 18px 54px;
     background-color: #DEDEDE;
     transition:.3s;
+    @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+     padding: 13px 45px;   
+    }
     @media screen and (max-width: $beforeTableWidth) {        // max 767
         padding: 6px 29px;
     }
@@ -162,6 +216,9 @@
         font-family: $AR;   
         color: #2F2F2F;
         transition:.3s;
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            font-size: 12px;
+        }
         @media screen and (max-width: $beforeTableWidth) {        // max 767
             font-size: 9px;
         }
@@ -180,11 +237,22 @@
     width: 213px;
     background-color: #FAC400;
     transition:.3s;
+    @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+        padding: 23px 0;
+        width: 183px;   
+    }
+    @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
+        width: 186px;
+        height: 67px;
+    }
     & span {
         font-size: 13px;
         font-family: $AR;   
         color: #2F2F2F;
         transition:.3s;
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            font-size: 11px;
+        }        
     }
     &:hover {
         background-color: #272727;
@@ -193,7 +261,149 @@
         }
     }
 }
+// <label class="tumbler">
+//     <input type="checkbox">
+//     <div class="tumbler__body">
+//         <div class="tumbler__circle"></div>
+//     </div>
+    
+// </label>
+// <label class="radio-checkbox">
+//     <input type="radio" value="all">
+//     <div class="radio-checkbox__body">
+//         <div class="radio-checkbox__circle"></div>
+//     </div>
+//     <div class="radio-checkbox__title">
+//         <span>Групнонобаритные шины</span>
+//     </div>
+// </label>
+.tumbler {
+    cursor: pointer;
+    user-select: none;
+    &__body {
+        position: relative;
+        width: 31px;
+        height: 18px;
+        border-radius: 50px;
+        background-color: #CDCDCD;
+        transition:.3s;
+    }
+    &__circle {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        height: 14px;
+        width: 14px;
+        border-radius: 50%;
+        background-color: #fff;
+        transition:.3s;
+    }
+    & input {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+    }
+    & input:checked~.tumbler__body {
+        background-color: #282828;
+        .tumbler__circle {
+            background-color: #FAC400;
+            left: calc(100% - 16px);
+        }
+    }
+}
+.radio-checkbox {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    user-select: none;
+    &:hover &__body {
+        opacity: .8;
+    }
+    &:hover &__title  {
+        & span {
+            opacity: .8;
+        }
+    }
+    & input {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+    }
+    & input:checked~.radio-checkbox__body {
+        & .radio-checkbox__circle {
+            
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &__body {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 18px;
+        width: 18px;
+        min-width: 18px;
+        border-radius: 50%;
+        background-color: #282828;   
+        transition:.3s;
+        @media screen and (max-width: $beforeDesktopWidth) {            // max 1200        
+            min-width: 14px;
+            width: 14px;
+            height: 14px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            min-width: 18px;
+            width: 18px;
+            height: 18px;
+        }
+    }
+    &__circle {
+        height: 10px;
+        width: 10px;
+        min-width: 10px;
+        background-color: #FAC400;
+        border-radius: 50%;
+        transition:.3s;
+        opacity: 0;
+        visibility: hidden;
+        @media screen and (max-width: $beforeDesktopWidth) {            // max 1200    
+            min-width: 8px;
+            width: 8px;
+            height: 8px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            min-width: 10px;
+            width: 10px;
+            height: 10px;
+        }
 
+    }
+    &__title {
+        margin-left: 10px;
+        @media screen and (max-width: $beforeDesktopWidth) {            // max 1200        
+            margin-left: 8px;
+            line-height: 13px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767    
+            margin-left: 10px;
+        }
+        span {
+            font-family: $AR;
+            font-size: 12px;
+            color: #282828;
+            transition:.3s;
+            @media screen and (max-width: $beforeDesktopWidth) {            // max 1200        
+                font-size: 11px;
+                line-height: 13px;
+            }
+            @media screen and (max-width: $beforeTableWidth) {    //767
+                font-size: 12px;
+            }
+        }
+    }
+}
 // Headers 
 .heading-first-type {
     font-size: 48px;
@@ -213,4 +423,10 @@
         line-height: 35px;
     }
     
+}
+// scrollbar 
+.simplebar-scrollbar:before {
+    width: 3px;
+    background-color: #070707;
+    opacity: .15;
 }

@@ -1,0 +1,70 @@
+<% var data = {
+    title: "Main Page | Project",
+  }; %>
+  
+  
+<%= _.template(require('./../includes/head.html'))(data) %>
+<%= _.template(require('./../includes/promo.html'))(data) %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<section id="contacts" class="contacts">
+    <div class="container">
+        <div class="contacts__wrapper">
+            <div class="contacts__title">
+                <span>Контакты</span>
+            </div>
+            <div class="contacts__body">
+                <div class="contacts__item">
+                    <div class="contacts__pre-title">
+                        <span>Связаться с нами</span>
+                    </div>
+                    <div class="contacts__contact">
+                        <a href="#">
+                            <span>8</span>
+                            <div class="asterick-svg"></div>
+                            <span>800</span>
+                            <div class="asterick-svg"></div>
+                            <span>876</span>
+                            <div class="asterick-svg"></div>
+                            <span>32</span>
+                            <div class="asterick-svg"></div>
+                            <span>65</span>
+                        </a>
+                        
+                    </div>
+                    <div class="contacts__contact">
+                        <a href="#">
+                            <span>Info@rocketshina.ru</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contacts__item">
+                    <div class="contacts__pre-title">
+                        <span>Связаться с нами</span>
+                    </div>
+                    <div class="contacts__contact">
+                        <a href="#">
+                            <span>194100, Российская Федерация, г. Санкт-Петербург, Выборгская набережная, 55 корп.3 лит А</span>
+                            
+                        </a>
+                        
+                    </div>
+                    <div class="contacts__contact">
+                        <a href="#">
+                            <span>Info@rocketshina.ru</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contacts__bottom">
+                    <span>ИНН 7802774114 </span>
+                    <span>КПП 780201001</span>
+                    <span>ОГРН 1117847617172</span>
+                    <span>ОКПО 30722179</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

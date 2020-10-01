@@ -1,0 +1,115 @@
+.contacts {
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    margin-top: 31px;
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        margin-top: 148px;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            flex-direction: column;
+        }
+    }
+    &__title {
+        flex: 0 0 41.5%;
+        max-width: 41.5%;
+        span {
+            font-family: $AR;
+            font-size: 53px;
+            color: #000;
+            @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+                font-size: 39px;
+            }
+            @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
+                font-size: 12px;
+            }
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                font-size: 25px;
+            }
+        }
+    }
+    &__body {
+        flex: 1;
+        max-width: unset;
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            flex: unset;
+            max-width: unset;
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 67px;
+    }
+    &__pre-title {
+        padding-bottom: 23px;
+        border-bottom: 1px solid #C0C0C0;
+        span {
+            font-family: $AR;
+            font-size: 14px;
+            color:  #000000;
+            @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+                font-size: 12px;
+            }
+            @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
+                font-size: 12px;
+            }
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                font-size: 12px;
+            }
+        }
+    }
+    &__contact {
+        padding-top: 28px;
+        a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            span {
+                font-family: $AR;
+                font-size: 48px;
+                line-height: 48px;
+                color: #000;
+                @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+                    font-size: 26px;
+                }
+                @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
+                    font-size: 23px;
+                }
+                @media screen and (max-width: $beforeTableWidth) {        // max 767
+                    font-size: 19px;
+                }
+            }
+            .asterick-svg {
+                height: 8px;
+                width: 14px;
+                margin: 0 6px;
+                background-color: #000;
+            }
+        }
+    }
+    &__bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        span {
+            font-family: $AR;
+            font-size: 14px;
+            color: #323232;
+            display: flex;
+            @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+                font-size: 12px;
+            }
+            @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
+                font-size: 11px;
+            }
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                font-size: 12px;
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+    }
+}

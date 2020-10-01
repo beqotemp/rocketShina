@@ -1,0 +1,501 @@
+<% var data = {
+    title: "Catalog | Project",
+  }; %>
+  
+
+<%= _.template(require('./../includes/head.html'))(data) %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+
+<div id="catalog-nav" class="catalog-nav">
+    <div class="container">
+        <div class="catalog-nav__mobile">
+            <div class="catalog-mtem">
+                <div class="catalog-mtem__title">
+                    <span>Только в наличии</span>
+                </div>
+                <div class="catalog-mtem__result">
+                    <label class="tumbler">
+                        <input type="checkbox">
+                        <div class="tumbler__body">
+                            <div class="tumbler__circle"></div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="catalog-mtem">
+                <div class="catalog-mtem__title">
+                    <span>Тип</span>
+                </div>
+                <div class="catalog-mtem__result">
+                    <span>Все типы шин</span>
+                    <div class="short-arrow-svg"></div> 
+                </div>
+            </div>
+            <div id="open-catalog" class="catalog-mtem">
+                <div class="catalog-mtem__title">
+                    <span>Все фильтры</span>
+                </div>
+                <div class="catalog-mtem__result">
+                    <span>Открыть</span>
+                    <div class="short-arrow-svg"></div> 
+                </div>
+            </div>
+        </div>
+        <div id="catalog-menu" class="catalog-nav__wrapper">
+            <div class="catalog-nav__close-mobile">
+                <div id="close-catalog" class="catalog-nav__close-btn">
+                    <span>Закрыть</span>
+                </div>
+            </div>
+            <div class="catalog-start-item">
+                <div class="catalog-start-item__preview">
+                    <div class="catalog-start-item__main-title">
+                        <span>Только в наличии</span>
+                    </div>
+                    <div class="catalog-start-item__result">
+                        <label class="tumbler">
+                            <input type="checkbox">
+                            <div class="tumbler__body">
+                                <div class="tumbler__circle"></div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- item  -->
+            <div class="catalog-nitem">
+                <div class="catalog-nitem__preview">
+                    <div class="catalog-nitem__main-title">
+                        <span>Тип</span>
+                    </div>
+                    <div class="catalog-nitem__result">
+                        <span>Крупногабаритные шины</span>
+                        <div class="short-arrow-svg"></div> 
+                    </div>
+                </div>
+                <div class="catalog-nitem__collapse">
+                    <div class="catalog-nitem__collapse-body">
+                        <div class="catalog-nitem__collapse-heading">
+                            <div class="catalog-nitem__collapse-title">
+                                <span>Тип</span>
+                            </div>
+                            <div class="catalog-nitem__collapse-icon">
+                                <div class="minus-svg"></div>
+                            </div>
+                        </div>
+                        <div class="catalog-nitem__collapse-list">
+                            <div class="catalog-nitem__collapse-scroll" data-simplebar data-simplebar-auto-hide="false">
+                                <div class="catalog-nitem__collapse-item">
+                                    <label class="radio-checkbox">
+                                        <input type="checkbox">
+                                        <div class="radio-checkbox__body">
+                                            <div class="radio-checkbox__circle"></div>
+                                        </div>
+                                        <div class="radio-checkbox__title">
+                                            <span>Все</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="catalog-nitem__collapse-item">
+                                    <label class="radio-checkbox">
+                                        <input type="checkbox">
+                                        <div class="radio-checkbox__body">
+                                            <div class="radio-checkbox__circle"></div>
+                                        </div>
+                                        <div class="radio-checkbox__title">
+                                            <span>Крупногабаритные шины</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="catalog-nitem__collapse-item">
+                                    <label class="radio-checkbox">
+                                        <input type="checkbox">
+                                        <div class="radio-checkbox__body">
+                                            <div class="radio-checkbox__circle"></div>
+                                        </div>
+                                        <div class="radio-checkbox__title">
+                                            <span>Грузовые шины</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-nitem__collapse-button">
+                            <a href="#">
+                                <span>Применить</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- item END -->
+            <!-- item  -->
+            <div class="catalog-nitem">
+                <div class="catalog-nitem__preview">
+                    <div class="catalog-nitem__main-title">
+                        <span>Состояние</span>
+                    </div>
+                    <div class="catalog-nitem__result">
+                        <span>Новые и б\у</span>
+                        <div class="short-arrow-svg"></div> 
+                    </div>
+                </div>
+                <div class="catalog-nitem__collapse">
+                    <div class="catalog-nitem__collapse-body">
+                        <div class="catalog-nitem__collapse-heading">
+                            <div class="catalog-nitem__collapse-title">
+                                <span>Состояние</span>
+                            </div>
+                            <div class="catalog-nitem__collapse-icon">
+                                <div class="minus-svg"></div>
+                            </div>
+                        </div>
+                        <div class="catalog-nitem__collapse-list">
+                            <div class="catalog-nitem__collapse-scroll" data-simplebar data-simplebar-auto-hide="false">
+                                <div class="catalog-nitem__collapse-item">
+                                    <label class="radio-checkbox">
+                                        <input type="checkbox">
+                                        <div class="radio-checkbox__body">
+                                            <div class="radio-checkbox__circle"></div>
+                                        </div>
+                                        <div class="radio-checkbox__title">
+                                            <span>Новые и б\у</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="catalog-nitem__collapse-item">
+                                    <label class="radio-checkbox">
+                                        <input type="checkbox">
+                                        <div class="radio-checkbox__body">
+                                            <div class="radio-checkbox__circle"></div>
+                                        </div>
+                                        <div class="radio-checkbox__title">
+                                            <span>Только новые</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="catalog-nitem__collapse-item">
+                                    <label class="radio-checkbox">
+                                        <input type="checkbox">
+                                        <div class="radio-checkbox__body">
+                                            <div class="radio-checkbox__circle"></div>
+                                        </div>
+                                        <div class="radio-checkbox__title">
+                                            <span>Только б\у</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-nitem__collapse-button">
+                            <a href="#">
+                                <span>Применить</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- item END -->
+            <!-- item  -->
+            <div class="catalog-nitem">
+                <div class="catalog-nitem__preview">
+                    <div class="catalog-nitem__main-title">
+                        <span>Размер</span>
+                    </div>
+                    <div class="catalog-nitem__result">
+                        <span>23</span>
+                        <div class="short-arrow-svg"></div> 
+                    </div>
+                </div>
+                <div class="catalog-nitem__collapse">
+                    <div class="catalog-nitem__collapse-body">
+                        <div class="catalog-nitem__collapse-heading">
+                            <div class="catalog-nitem__collapse-title">
+                                <span>Размер</span>
+                            </div>
+                            <div class="catalog-nitem__collapse-icon">
+                                <div class="minus-svg"></div>
+                            </div>
+                        </div>
+                        <div class="catalog-nitem__collapse-list">
+                            <div class="catalog-nitem__collapse-scroll" data-simplebar data-simplebar-auto-hide="false">
+                                <div class="catalog-nitem__collapse-item">
+                                    <label class="radio-checkbox">
+                                        <input type="checkbox">
+                                        <div class="radio-checkbox__body">
+                                            <div class="radio-checkbox__circle"></div>
+                                        </div>
+                                        <div class="radio-checkbox__title">
+                                            <span>Все</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="catalog-nitem__collapse-item">
+                                    <label class="radio-checkbox">
+                                        <input type="checkbox">
+                                        <div class="radio-checkbox__body">
+                                            <div class="radio-checkbox__circle"></div>
+                                        </div>
+                                        <div class="radio-checkbox__title">
+                                            <span>18</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="catalog-nitem__collapse-item">
+                                    <label class="radio-checkbox">
+                                        <input type="checkbox">
+                                        <div class="radio-checkbox__body">
+                                            <div class="radio-checkbox__circle"></div>
+                                        </div>
+                                        <div class="radio-checkbox__title">
+                                            <span>21</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="catalog-nitem__collapse-item">
+                                    <label class="radio-checkbox">
+                                        <input type="checkbox">
+                                        <div class="radio-checkbox__body">
+                                            <div class="radio-checkbox__circle"></div>
+                                        </div>
+                                        <div class="radio-checkbox__title">
+                                            <span>23</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="catalog-nitem__collapse-item">
+                                    <label class="radio-checkbox">
+                                        <input type="checkbox">
+                                        <div class="radio-checkbox__body">
+                                            <div class="radio-checkbox__circle"></div>
+                                        </div>
+                                        <div class="radio-checkbox__title">
+                                            <span>12</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="catalog-nitem__collapse-item">
+                                    <label class="radio-checkbox">
+                                        <input type="checkbox">
+                                        <div class="radio-checkbox__body">
+                                            <div class="radio-checkbox__circle"></div>
+                                        </div>
+                                        <div class="radio-checkbox__title">
+                                            <span>11</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-nitem__collapse-button">
+                            <a href="#">
+                                <span>Применить</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- item END -->
+            <!-- item  -->
+            <div class="catalog-nitem catalog-nitem-price">
+                <div class="catalog-nitem__preview">
+                    <div class="catalog-nitem__main-title">
+                        <span>Цена</span>
+                    </div>
+                    <div class="catalog-nitem__result">
+                        <span>От 0  до 137,000</span>
+                        <div class="short-arrow-svg"></div> 
+                    </div>
+                </div>
+                <div class="catalog-nitem__collapse">
+                    <div class="catalog-nitem__collapse-body">
+                        <div class="catalog-nitem__collapse-heading">
+                            <div class="catalog-nitem__collapse-title">
+                                <span>Цена</span>
+                            </div>
+                            <div class="catalog-nitem__collapse-icon">
+                                <div class="minus-svg"></div>
+                            </div>
+                        </div>
+                        <div class="catalog-nitem__collapse-form">
+                            <form class="price-form">
+                                <button type="reset">Сбросить</button>
+                                <label>
+                                    <span>От</span>
+                                    <input type="number" placeholder="От 0 Р">
+                                </label>
+                                <label>
+                                    <span>До</span>
+                                    <input type="number" placeholder="До 300 000 Р">
+                                </label>
+                            </form>
+                        </div>
+                        
+                        <div class="catalog-nitem__collapse-button">
+                            <a href="#">
+                                <span>Применить</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- item END -->
+            <!-- item  -->
+            <div class="catalog-nitem catalog-nitem-last">
+                <div class="catalog-nitem__preview">
+                    <div class="catalog-nitem__main-title">
+                        <span>Бренды</span>
+                    </div>
+                    <div class="catalog-nitem__result">
+                        <span>Все</span>
+                        <div class="short-arrow-svg"></div> 
+                    </div>
+                </div>
+                <div class="catalog-nitem__collapse">
+                    <div class="catalog-nitem__collapse-body">
+                        <div class="catalog-nitem__collapse-heading">
+                            <div class="catalog-nitem__collapse-title">
+                                <span>Бренды</span>
+                            </div>
+                            <div class="catalog-nitem__collapse-icon">
+                                <div class="minus-svg"></div>
+                            </div>
+                        </div>
+                        <div class="catalog-nitem__collapse-list">
+                            <div class="catalog-nitem__collapse-scroll" data-simplebar data-simplebar-auto-hide="false">
+                                <div class="catalog-nitem__collapse-item">
+                                    <label class="radio-checkbox">
+                                        <input type="checkbox">
+                                        <div class="radio-checkbox__body">
+                                            <div class="radio-checkbox__circle"></div>
+                                        </div>
+                                        <div class="radio-checkbox__title">
+                                            <span>michelin</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="catalog-nitem__collapse-item">
+                                    <label class="radio-checkbox">
+                                        <input type="checkbox">
+                                        <div class="radio-checkbox__body">
+                                            <div class="radio-checkbox__circle"></div>
+                                        </div>
+                                        <div class="radio-checkbox__title">
+                                            <span>Another brand</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="catalog-nitem__collapse-item">
+                                    <label class="radio-checkbox">
+                                        <input type="checkbox">
+                                        <div class="radio-checkbox__body">
+                                            <div class="radio-checkbox__circle"></div>
+                                        </div>
+                                        <div class="radio-checkbox__title">
+                                            <span>Another brand</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="catalog-nitem__collapse-item">
+                                    <label class="radio-checkbox">
+                                        <input type="checkbox">
+                                        <div class="radio-checkbox__body">
+                                            <div class="radio-checkbox__circle"></div>
+                                        </div>
+                                        <div class="radio-checkbox__title">
+                                            <span>Another brand</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="catalog-nitem__collapse-item">
+                                    <label class="radio-checkbox">
+                                        <input type="checkbox">
+                                        <div class="radio-checkbox__body">
+                                            <div class="radio-checkbox__circle"></div>
+                                        </div>
+                                        <div class="radio-checkbox__title">
+                                            <span>Another brand</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="catalog-nitem__collapse-item">
+                                    <label class="radio-checkbox">
+                                        <input type="checkbox">
+                                        <div class="radio-checkbox__body">
+                                            <div class="radio-checkbox__circle"></div>
+                                        </div>
+                                        <div class="radio-checkbox__title">
+                                            <span>Another brand</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="catalog-nitem__collapse-item">
+                                    <label class="radio-checkbox">
+                                        <input type="checkbox">
+                                        <div class="radio-checkbox__body">
+                                            <div class="radio-checkbox__circle"></div>
+                                        </div>
+                                        <div class="radio-checkbox__title">
+                                            <span>Another brand</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="catalog-nitem__collapse-item">
+                                    <label class="radio-checkbox">
+                                        <input type="checkbox">
+                                        <div class="radio-checkbox__body">
+                                            <div class="radio-checkbox__circle"></div>
+                                        </div>
+                                        <div class="radio-checkbox__title">
+                                            <span>Another brand</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-nitem__collapse-button">
+                            <a href="#">
+                                <span>Применить</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- item END -->
+            <div class="catalog-nav__accept-btns">
+                <div class="accept-btn">
+                    <span>Применить</span>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+<secton id="catalog" class="catalog">
+    <div class="container">
+        <div class="catalog__wrapper">
+            <div class="row">
+                <%= _.template(require('./../includes/product-card.html'))(data) %>
+                <%= _.template(require('./../includes/product-card.html'))(data) %>
+                <%= _.template(require('./../includes/product-card.html'))(data) %>
+                <%= _.template(require('./../includes/product-card.html'))(data) %>
+                <%= _.template(require('./../includes/product-card.html'))(data) %>
+                <%= _.template(require('./../includes/product-card.html'))(data) %>
+                <%= _.template(require('./../includes/product-card.html'))(data) %>
+                <%= _.template(require('./../includes/product-card.html'))(data) %>
+                <%= _.template(require('./../includes/product-card.html'))(data) %>
+            </div>
+            <div class="catalog__preloader">
+                <div class="catalog-preloader">
+                    <div class="asterick-svg"></div>
+                    <div class="asterick-svg"></div>
+                    <div class="asterick-svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</secton>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>
