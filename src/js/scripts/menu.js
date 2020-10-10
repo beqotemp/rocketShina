@@ -28,17 +28,17 @@ document.querySelector('#navbar-collapse-burger').addEventListener('click', func
 
 // catalog 
 
-document.querySelector('#open-catalog').addEventListener('click', function (e){
-	e.preventDefault();
-	document.querySelector('#site').classList.toggle('overflow');
-	document.querySelector('#catalog-menu').classList.toggle('show');
+// document.querySelector('#open-catalog').addEventListener('click', function (e){
+// 	e.preventDefault();
+// 	document.querySelector('#site').classList.toggle('overflow');
+// 	document.querySelector('#catalog-menu').classList.toggle('show');
 	
-})
-document.querySelector('#close-catalog').addEventListener('click', function (e){
-	e.preventDefault();
-	document.querySelector('#site').classList.toggle('overflow');
-	document.querySelector('#catalog-menu').classList.toggle('show');
-})
+// })
+// document.querySelector('#close-catalog').addEventListener('click', function (e){
+// 	e.preventDefault();
+// 	document.querySelector('#site').classList.toggle('overflow');
+// 	document.querySelector('#catalog-menu').classList.toggle('show');
+// })
 
 
 

@@ -1,0 +1,146 @@
+<% var data = {
+    title: "Deliver Page | Project",
+  }; %>
+  
+  
+<%= _.template(require('./../includes/head.html'))(data) %>
+<%= _.template(require('./../includes/promo.html'))(data) %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<section id="delivery" class="delivery">
+    <div class="container">
+        <div class="delivery__heading">
+            <h1 class="heading-first-type">
+                Cпособы доставки
+            </h1>
+        </div>
+        <div class="delivery__wrapper">
+            <div class="delivery__item">
+                <div class="delivery__icon" style="background-image: url(../../img/general/clearance6.png)">
+
+                </div>
+                <div class="delivery__intro">
+                    <div class="delivery__title">
+                        <span>Транспортная компания</span>
+                    </div>
+                    <div class="delivery__subtitle">
+                        <p>
+                            Получаем от Вас заявку, ️ собираем и согласовываем партию, 
+                            В течении суток отправляем на Ваш склад транспортной компанией. 
+                            Стоимость доставки рассчитывается индивидуально, оплачиваете самостоятельно. 
+                            При отгрузке крупной партии возможна бесплатная доставка. Согласовывается индивидуально
+                        </p>
+                    </div>
+                    <div class="delivery__item-bottom">
+                        <div class="delivery__bottom-item">
+                            <div class="delivery__bottom-icon">
+                                <span>01</span>
+                            </div>
+                            <div class="delivery__bottom-title">
+                                <span>Получаем от Вас заявку</span>
+                            </div>
+                        </div>
+                        <div class="delivery__bottom-item">
+                            <div class="delivery__bottom-icon">
+                                <span>02</span>
+                            </div>
+                            <div class="delivery__bottom-title">
+                                <span>Собираем и согласовываем партию</span>
+                            </div>
+                        </div>
+                        <div class="delivery__bottom-item">
+                            <div class="delivery__bottom-icon">
+                                <span>03</span>
+                            </div>
+                            <div class="delivery__bottom-title">
+                                <span>В течении суток отправляем на склад транспортной компанией</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="delivery__item">
+                <div class="delivery__icon" style="background-image: url(../../img/general/benefit1.png)">
+
+                </div>
+                <div class="delivery__intro">
+                    <div class="delivery__title">
+                        <span>Самовывоз</span>
+                    </div>
+                    <div class="delivery__subtitle">
+                        <p>
+                            Вы всегда можете приехать к нам на склад и самостоятельно
+                            осмотреть и выбрать понравившиеся шины. Перед планируемым приездом 
+                            предварительно согласуйте с нашими менеджерами время, они сделают пропуск 
+                            для Вашего транспорта. На складе есть погрузчик, что позволит быстро и легко 
+                            осуществить отгрузку на ваш транспорт. Наш склад находится по адресу Московская 
+                            область, с. Ганусово, тер. Промзона, стр.50. Вес, объем, габариты шин Michelin XZL 16.00R20: 
+                            Вес - 154 кг, объем - 0,74 м3, высота - 130 см, ширина - 40 см.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+
+<section class="delivery__another">
+    <div class="container">
+        <div class="delivery__heading">
+            <h1 class="heading-first-type">
+                Способы оплаты
+            </h1>
+        </div>
+        <div class="delivery__wrapper">
+            <div class="delivery__item">
+                <div class="delivery__icon" style="background-image: url(../../img/general/clearance5.png)"></div>
+                <div class="delivery__intro">
+                    <div class="delivery__title">
+                        <span>Наличными</span>
+                    </div>
+                    <div class="delivery__subtitle">
+                        <p>
+                            Возможна оплата с НДС и без НДС. Заключаем договор,
+                            выставляем счет. Предоставляем полный пакет документов.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="delivery__item">
+                <div class="delivery__icon" style="background-image: url(../../img/general/clearance4.png)"></div>
+                <div class="delivery__intro">
+                    <div class="delivery__title">
+                        <span>Безналичный расчет</span>
+                    </div>
+                    <div class="delivery__subtitle">
+                        <p>
+                            Оплата наличными возможна при самовывозе
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="delivery__item">
+                <div class="delivery__icon" style="background-image: url(../../img/general/clearance9.png)"></div>
+                <div class="delivery__intro">
+                    <div class="delivery__title">
+                        <span>Перевод на карту</span>
+                    </div>
+                    <div class="delivery__subtitle">
+                        <p>
+                            Вы можете перевести средства на нашу корпоративную карту, предоставляем чек.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<%= _.template(require('./../includes/promot-section.html'))(data) %>
+<%= _.template(require('./../includes/footer.html'))(data) %>

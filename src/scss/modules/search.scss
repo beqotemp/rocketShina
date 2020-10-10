@@ -132,6 +132,9 @@
         }
     }
     &__preview {
+        &:hover~.search-result__intro .search-result__title span{
+            color: #FAC400!important;
+        }
         img {
             height: 100px;
             width: 100px;
@@ -165,15 +168,24 @@
             white-space: nowrap;
             text-overflow: ellipsis;
         }
-        
-        span{
-            font-family: $AR;
-            font-size: 18px;
-            color: #000;
-            @media screen and (max-width: $beforeTableWidth) {        // max 767
-                font-size: 11px;
+        a {
+            &:hover {
+                span {
+                    color: #FAC400;
+                }
             }
+            span{
+                font-family: $AR;
+                font-size: 18px;
+                color: #000;
+                transition:.3s;
+                @media screen and (max-width: $beforeTableWidth) {        // max 767
+                    font-size: 11px;
+                }
+            }
+            
         }
+        
     }
     &__specs {
         margin-top: 10px;

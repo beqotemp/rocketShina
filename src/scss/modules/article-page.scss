@@ -179,7 +179,10 @@
             height: 20px;
             width: 20px;
             margin-bottom: 24px;
-            
+            transition: .3s;
+            &:hover {
+                opacity: .6;
+            }
             @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
                 height: 16px;
                 width: 20px;

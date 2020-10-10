@@ -11,6 +11,7 @@ html {
   height: 100%;
 }
 body {
+  
   // *** Main page
   // background: url(/img/workspace/main-page1440.png);
   // background: url(/img/workspace/main-page991.png);
@@ -47,14 +48,49 @@ body {
   // background: url(/img/workspace/search-result320.png);
 
   // *** Contacts
-  // background: url(/img/workspace/search1440.png);
-  background: url(/img/workspace/con1440.png);
+  // background: url(/img/workspace/con1440.png);
   // background: url(/img/workspace/con991.png);
   // background: url(/img/workspace/con720.png);
   // background: url(/img/workspace/con320.png);
 
+  // *** Clearance
+  // background: url(/img/workspace/clearance1440.png);
+  // background: url(/img/workspace/clearance991.png);
+  // background: url(/img/workspace/clearance720.png);
+  // background: url(/img/workspace/clearance320.png);
+
+  // *** Delivery
+  // background: url(/img/workspace/delivery1440.png);
+  // background: url(/img/workspace/delivery991.png);
+  // background: url(/img/workspace/delivery720.png);
+  // background: url(/img/workspace/delivery320.png);
+
+  // *** WholeSale
+  // background: url(/img/workspace/wholesale1440.png);
+  // background: url(/img/workspace/wholesale991.png);
+  // background: url(/img/workspace/wholesale720.png);
+  // background: url(/img/workspace/wholesale320.png);
+
+  // *** PP
+  // background: url(/img/workspace/pp1440.png);
+  // background: url(/img/workspace/pp991.png);
+  // background: url(/img/workspace/pp720.png);
+  // background: url(/img/workspace/pp320.png);
+
+   // *** PP2
+  // background: url(/img/workspace/2pp1440.png);
+  // background: url(/img/workspace/2pp991.png);
+  // background: url(/img/workspace/2pp720.png);
+  // background: url(/img/workspace/2pp320.png);
+
+   // *** PP3
+  // background: url(/img/workspace/3pp1440.png);
+  // background: url(/img/workspace/3pp991.png);
+  // background: url(/img/workspace/3pp720.png);
+  // background: url(/img/workspace/3pp320.png);
 
 
+  background-position-y: -5px;
   background-size: cover;
   //dev
 
@@ -116,6 +152,7 @@ section {
 // Modules
 
 @import "modules/main-page.scss";
+@import "modules/product-page.scss";
 @import "modules/catalog.scss";
 @import "modules/navbar.scss";
 @import "modules/promo.scss";
@@ -127,4 +164,8 @@ section {
 @import "modules/about.scss";
 @import "modules/search.scss";
 @import "modules/contacts.scss";
-@import "modules/404.scss"
+@import "modules/clearance.scss";
+@import "modules/dealer.scss";
+@import "modules/delivery.scss";
+@import "modules/404.scss";
+@import "modules/modals.scss"

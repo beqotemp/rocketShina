@@ -1,461 +1,218 @@
-<div class="alert__wrapper">
-	<div class="alert success">
-		<div class="alert__body"> 
-			<div class="alert__color">
-				<div class="alert__sign">
-					<div class="check-mark-svg"></div>
-					<div class="exclamation-svg"></div>
-					<div class="times-svg"></div>
+<div class="modal show">
+	<div id="success-modal" class="modal__body">
+		<div class="modal__heading">
+			<div class="modal__birk">
+				<div class="modal-birk">
+					<div class="modal-birk__wrapper">
+						<img src="../../img/general/birk.png" alt="">
+					</div>
 				</div>
 			</div>
-			<div class="alert__intro">
-				<div class="times-svg"></div>
-				<div class="alert__head">
-					<span class="alert__title">
-						Успешно
-					</span>
+			<!-- <div class="modal__controls">
+				<div class="modal-cross">
+					<div class="modal-cross__first"></div>
+					<div class="modal-cross__second"></div>
 				</div>
-				<div class="alert__subtitle">
+			</div> -->
+		</div>
+		<!-- modal var -->
+		<div class="modal__var">
+			<div class="modal-success">
+				<div class="modal-success__picture">
+					<img src="../../img/svg/success.svg" alt="">
+				</div>
+				<div class="modal-success__title">
+					<span>Заявка отправлена</span>
+				</div>
+				<div class="modal-success__subtitle">
 					<p>
-						Ваши данные успешно отправлены на модерацию и будут опубликованы после проверки
+						Спасибо за заявку, наш менеджер свяжется с вами в ближайшее время
 					</p>
 				</div>
-			</div>
-		</div>
-	</div>
-	<div class="alert warning">
-		<div class="alert__body">
-			<div class="alert__color">
-				<div class="alert__sign">
-					<div class="check-mark-svg"></div>
-					<div class="exclamation-svg"></div>
-					<div class="times-svg"></div>
-				</div>
-			</div>
-			<div class="alert__intro">
-				<div class="times-svg"></div>
-				<div class="alert__head">
-					<span class="alert__title">
-						Успешно
-					</span>
-				</div>
-				<div class="alert__subtitle">
-					<p>
-						Ваши данные успешно отправлены на модерацию и будут опубликованы после проверки
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="modal active">
-
-	<div class="modal__wrapper">
-		<div class="container">
-			<div class="row no-gutters">
-				<div class="col-12 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-8 offset-lg-2 offset-xl-1 col-xl-8 offset-xl-2"> <!-- html change new -->
-					
-					<div class="modal-body">
-						<div class="modal__t-figure"></div>
-						<div class="modal__f-figure"></div>
-						<div class="modal-body__figure"></div>
-						<div class="modal-body__cross">
-							<div class="times-svg"></div>
-						</div>
-						<!-- Track the date -->
-						<div class="modal__var modal__second-var">
-							<div class="row">
-								<div class="col-xl-6 offset-xl-3">
-									<div class="modal__title-type-second">
-										<span>Следите за датой</span>
-									</div>
-									<div class="modal__subtitle-type-second">
-										<span>Если у вас есть вопросы по сотрудничеству, предложения или обратная связь по работе портала, пишите нам! Нам очень важно быть с вами на связи.</span>
-									</div>
-									<div class="modal__form-second-type">
-										<form action="">
-											<label class="modal__label" for="">
-												<span class="modal__input-name">Ваше Имя</span>
-												<input type="text" placeholder="Александр">
-											</label>
-											<label class="form__label">
-                                               <span>Выберите дату или диапазон дат </span>
-                                               <div class="form__select">
-                                                   <div class="form__select-intro">
-                                                       <span>Выбрать дату</span>
-                                                       <span class="arrow-svg"></span>
-                                                   </div>
-                                                   <div class="form__select-body select-body-second-type">
-                                                       <div class="form__select-title">
-                                                           <span>Выбрать дату</span>
-                                                       </div>
-                                                       <div class="form__select-wrapper select-wrapper-second-type">
-                                                        	<v-calendar
-																class="calendar main-calendar"
-																mode='range' 
-																title-position="left"
-																v-model='date'
-																is-inline
-																color="red"
-																:popover="{ placement: 'bottom', visibility: 'click' }">
-															</v-calendar>
-                                                       </div>
-
-                                                   </div>
-                                               </div>
-                                           	</label>
-											<label class="form__label">
-                                               <span>Выберите специалиста, но это не обязательно </span>
-                                               <div class="form__select">
-                                                   <div class="form__select-intro">
-                                                       <span>Выбрать специалиста</span>
-                                                       <span class="arrow-svg"></span>
-                                                   </div>
-                                                   <div class="form__select-body">
-                                                       <div class="form__select-title">
-                                                           <span>Выбрать специалиста</span>
-                                                       </div>
-                                                       <div class="form__select-wrapper">
-                                                        	<div class="form__select-list mscroll" data-simplebar data-simplebar-auto-hide="false">
-																<span>Программер</span>
-																<span>Ламер</span>
-																<span>Далай лама</span>
-																<span>Кусочек сала</span>
-																<span>Новая программа</span>
-														 	</div>
-                                                       </div>
-
-                                                   </div>
-                                               </div>
-                                           	</label>
-											<label class="form__label">
-                                               <span>Выберите город</span>
-                                               <div class="form__select">
-                                                   <div class="form__select-intro">
-                                                       <span>Выберите город</span>
-                                                       <span class="arrow-svg"></span>
-                                                   </div>
-                                                   <div class="form__select-body">
-                                                       <div class="form__select-title">
-                                                           <span>Выберите город</span>
-                                                       </div>
-                                                       <div class="form__select-wrapper">
-                                                        	<div class="form__select-list mscroll" data-simplebar data-simplebar-auto-hide="false">
-																<span>Москва</span>
-																<span>Москва</span>
-																<span>Москва</span>
-																<span>Москва</span>
-																<span>Москва</span>
-																<span>Москва</span>
-																<span>Москва</span>													 
-														 	</div>
-                                                       </div>
-
-                                                   </div>
-                                               </div>
-                                           	</label>
-											
-											<div class="checkpol">
-												<label class="filter-checkbox">
-													Я даю согласие на обработку персональных данных
-													<input type="checkbox" checked="checked">
-													<span class="checkmark"></span>
-												</label>
-											</div>
-
-											<div class="track-button-modal">
-												<a href="#" class="benefits-btn yellow">
-									        		<div class="bell-svg"></div>
-									        		<span>Следить за датой</span> 
-									        		<div class="full-arrow-svg"></div>
-									        	</a>
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- end track -->
+				<div class="modal-success__button">
+					<div class="modal-success__btn">
+						<span>Закрыть</span>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
-<div class="modal">
-
-	<div class="modal__wrapper">
-		<div class="container">
-			<div class="row no-gutters">
-				<div class="col-12 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-8 offset-lg-2 offset-xl-1 col-xl-8 offset-xl-2"> <!-- html change new -->
-					
-					<div class="modal-body">
-						<div class="modal__f-figure"></div>
-						<div class="modal__s-figure"></div>
-						<div class="modal-body__figure"></div>
-						<div class="modal-body__cross">
-							<div class="times-svg"></div>
-						</div>
-						<!-- Video step one  -->
-						<div class="modal__var">
-							<div class="row">
-								<div class="col-xl-6 offset-xl-3">
-									<div class="modal__title">
-										<span>Заргрузка видео</span>
-									</div>
-									<div class="modal__subtitle">
-										<span>
-											Чтобы начать загрузку, выберите файл
-											на компьютере или перетащите его в это окно.
-										</span>
-									</div>
-									<div class="modal__add-btn">
-										<a href="#" class="add-video-btn">Выбрать файл</a>
-									</div>
-									<div class="modal__subtitle">
-										<span>
-											Или
-										</span>
-									</div>
-									<div class="modal__or-button">
-										<a href="#" class="add-btn"><span>Добавить с другого сайта</span></a>
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<!-- Video step two  -->
-						<div class="modal__var">
-							<div class="row">
-								<div class="col-xl-6 offset-xl-3">
-									<div class="modal__form">
-										<form action="">
-											<label class="modal__label" for="">
-												<span class="modal__input-name">Ссылка на видео</span>
-												<input type="text" placeholder="https://">
-											</label>
-										</form>
-									</div>
-									<div class="modal__subtitle">
-										<span>
-											Вы можете указать ссылку на видеозаписи таких сайтах, как Youtube, Rutube, Vimeo и др.
-										</span>
-									</div>
-
-
-								</div>
-							</div>
-						</div>
-						<!-- Oferta  -->
-						<div class="modal__var">
-							<div class="row">
-								<div class="col-xl-6 offset-xl-3">
-									<div class="modal__title">
-										<span>Оферта</span>
-									</div>
-									<div class="modal__paragraph">
-										<p>
-											Event Outlet – информационный портал по поиску исполнителей на мероприятия.
-											Обращаем ваше внимание на то, что данный портал, а также вся информация об услугах, товарах и ценах, предоставленная на нём, носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса Российской Федерации. Для получения подробной информации о стоимости указанных товаров и (или) услуг, пожалуйста, обращайтесь к исполнителю напрямую по указанным контактным данным в его анкете.
-										</p>
-										<span>
-											ГК РФ Статья 437. Приглашение делать оферты. Публичная оферта
-										</span>
-										<ol>
-											<li>Реклама и иные предложения, адресованные неопределенному кругу лиц, рассматриваются как приглашение делать оферты, если иное прямо не указано в предложении.</li>
-											<li>Содержащее все существенные условия договора предложение, из которого усматривается воля лица, делающего предложение, заключить договор на указанных в предложении условиях с любым, кто отзовется, признается офертой (публичная оферта).</li>
-										</ol>
-										<span>
-											Рекомендации по безопасности
-										</span>
-										<p>
-											Исполнители не являются сотрудниками Event Outlet и несут личную ответственность за качество предоставляемых услуг. При сотрудничестве с любым исполнителем мы рекомендуем всегда соблюдать базовые правила безопасности.
-										</p>
-										<ul>
-											<li>Внимательно изучите и обсудить конкретные условия работы на вашем мероприятии.</li>
-											<li>Прописывайте все условия и этапы сотрудничества в договоре или смете, составляйте расписки о передаче денег или сохраняйте чеки.</li>
-										</ul>
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<!-- Callback ememe  -->
-						<div class="modal__var">
-							<div class="row">
-								<div class="col-xl-6 offset-xl-3">
-									<div class="modal__title">
-										<span>Обратная связь</span>
-									</div>
-									<div class="modal__subtitle">
-										<span>Если у вас есть вопросы по сотрудничеству, предложения или обратная связь по работе портала, пишите нам! Нам очень важно быть с вами на связи.</span>
-									</div>
-									<div class="modal__form">
-										<form action="">
-											<label class="modal__label" for="">
-												<span class="modal__input-name">Ваше Имя</span>
-												<input type="text" placeholder="Александр">
-											</label>
-											<label class="modal__label" for="">
-												<span class="modal__input-name">Ваш почта</span>
-												<input type="text" placeholder="eventoutlet@gmail.com">
-											</label>
-											<label class="modal__label" for="">
-												<span class="modal__input-name">Тема</span>
-												<input type="text" placeholder="Тема сообщения">
-											</label>
-											<label class="form__label">
-												<span>Сообщение</span>
-												<div class="form__textarea-wrapp">
-													<textarea name="" id="" class="form__textarea" placeholder="Начните писать"></textarea>
-													<span>Еще 1000 символов</span>
-												</div>
-											</label>
-
-											<button type="submit" class="rectangle-btn rectangle-btn-green">
-												<span>Отправить</span>
-											</button>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Sign in  -->
-						<div class="modal__var" style="display: none" >
-							<div class="row">
-								<div class="col-xl-6 offset-xl-3">
-									<div class="modal__title">
-										<span>Вход</span>
-									</div>
-									<div class="modal__subtitle">
-										<span>Введите ваш логин/адрес почты и пароль для входа в личный кабинет.</span>
-									</div>
-									<div class="modal__form">
-										<form action="">
-											<label class="modal__label" for="">
-												<span class="modal__input-name">Ваша почта </span>
-												<input type="text" placeholder="eventoutlet@gmail.com">
-												<span class="validation">Валидация почты</span>
-											</label>
-											<label class="modal__label" for="">
-												<span class="modal__input-name">Пароль</span>
-												<input type="pasword" placeholder="*********">
-												<span class="forgot-pass"><a href="#">Забыли пароль?</a></span>
-											</label>
-											<button type="submit" class="rectangle-btn rectangle-btn-green">
-												<span>Вход</span>
-											</button>
-											<a href="#" class="empty-btn">Регистрация</a>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- REGISTRATION  -->
-						<div class="modal__var" style="display: none">
-							<div class="row">
-								<div class="col-xl-6 offset-xl-3">
-									<div class="modal__title">
-										<span>Регистрация</span>
-									</div>
-									<div class="modal__subtitle">
-										<span>Вы можете зарегестрироваться и стать исполнителем в 2 клика на нашем сервисе.</span>
-									</div>
-									<div class="modal__form">
-										<form action="">
-											<label class="modal__label" for="">
-												<span class="modal__input-name">Ваш логин или почта </span>
-												<input type="text" placeholder="eventoutlet@gmail.com">
-											</label>
-											<label class="modal__label" for="">
-												<span class="modal__input-name">Пароль</span>
-												<input type="pasword" placeholder="*********">
-											</label>
-											<button type="submit" class="rectangle-btn rectangle-btn-green">
-												<span>Зарегестрироваться</span>
-											</button>
-											<a href="#" class="empty-btn">Вход</a>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Password recovery  -->
-						<div class="modal__var" style="display: none">
-							<div class="row">
-								<div class="col-xl-6 offset-xl-3">
-									<div class="modal__title">
-										<span>Восстановление пароля</span>
-									</div>
-									<div class="modal__subtitle">
-										<span>Введите почту на которую был зарегистрирован ваш профиль, на него придет письмо с подтверждением смены пароля</span>
-									</div>
-									<div class="modal__form">
-										<form action="">
-											<label class="modal__label" for="">
-												<span class="modal__input-name">Ваш почта</span>
-												<input type="text" placeholder="eventoutlet@gmail.com">
-											</label>
-											
-											<button type="submit" class="rectangle-btn rectangle-btn-green">
-												<span>Восстановить</span>
-											</button>
-											<a href="#" class="empty-btn">Вход</a>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Thanks -->
-						<div class="modal__var thanks-modal">
-							<div class="row">
-								<div class="col-xl-6 offset-xl-3">
-									<div class="modal__title">
-										<span>Пароль отпправлен на вашу почту</span>
-									</div>
-									<div class="modal__subtitle">
-										<span>Мы отправили письмо с инструкцией по восстановлению пароля на вашу почту.</span>
-									</div>
-									<div class="modal__form">
-										<a href="#" class="rectangle-btn-border rectangle-btn-border-green">
-											<span>Вход</span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Wanna meet? -->
-						<div class="row">
-							<div class="col-xl-12">
-								<div class="acquainted">
-									<div class="acquainted__wrapper">
-										<div class="acquainted__body">
-											<div class="acquainted__intro">
-												<div class="acquainted__title">
-													<span>Мы еще не знакомы?</span>
-												</div>
-												<div class="acquainted__subtitle">
-													<p>Давайте знакомиться. Ознакомитесь с нашим сервисов, чем он будет вам полезен и как выгодно и эффективно его использовать.</p>
-												</div>
-												<div class="acquainted__button">
-													<a href="#" class="thin-rectangle-btn thin-rectangle-btn-dark">
-														<span>Обучение работе с сервисом</span>
-													</a>
-												</div>
-											</div>
-											<div class="acquainted__pic">
-												<img src="../img/general/meet.png" alt="">
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+		<!-- modal-var END-->
+		<!-- modal var -->
+		<div class="modal__var">
+			<div class="modal-success">
+				<div class="modal-success__picture">
+					<img src="../../img/general/clearance12.png" alt="">
+				</div>
+				<div class="modal-success__title">
+					<span>Ваш отзыв отправлен</span>
+				</div>
+				<div class="modal-success__subtitle">
+					<p>
+						Ваш отзыв успешно отправлен и уже ожидает публикации
+					</p>
+				</div>
+				<div class="modal-success__button">
+					<div class="modal-success__btn">
+						<span>Закрыть</span>
 					</div>
-					
-					
 				</div>
 			</div>
 		</div>
+		<!-- modal-var END-->
+	</div>
+	<div id="reviews" class="modal__body">
+		<div class="modal__heading">
+			<div class="modal__birk">
+				<div class="modal-birk">
+					<div class="modal-birk__wrapper">
+						<img src="../../img/general/birk.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="modal__controls">
+				<div class="modal-cross">
+					<div class="modal-cross__first"></div>
+					<div class="modal-cross__second"></div>
+				</div>
+			</div>
+		</div>
+		<!-- modal var -->
+		<div class="modal__var">
+			<div class="modal-review">
+				<div class="modal-review__heading">
+					<div class="modal-review__pre-title">
+						<span>/</span>
+						<span>Подробный отзыв</span>
+					</div>
+					<div class="modal-review__title">
+						<span>
+							Купили грузовые шины, качество порадовало, долго изнашиваются, подошли идеально
+						</span>
+					</div>
+					<div class="modal-review__body">
+						<p>
+							Не следует, однако забывать, что консультация с широким активом в 
+							значительной степени обуславливает создание модели развития. 
+							С другой стороны постоянный количественный рост и сфера нашей активности 
+							позволяет выполнять важные задания по разработке форм развития.
+						</p>
+						<p>
+							Повседневная практика показывает, что начало повседневной работы по 
+							формированию позиции позволяет оценить значение форм развития.Таким образом 
+							сложившаяся структура организации обеспечивает широкому
+						</p>
+					</div>
+					<div class="modal-review__bottom">
+						<div class="modal-review__gallery">
+							<div class="modal-review__photo">
+								<img src="https://picsum.photos/200/300" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- modal-var END-->
+		<!-- modal var -->
+		<div class="modal__var">
+			<div class="modal-order">
+				<div class="modal-order__heading">
+					<div class="modal-order__title">
+						<span>Заполните форму</span>
+					</div>
+					<div class="modal-order__subtitle">
+						<p>
+							Наш менеджер перезвонит вам в ближайшие 5 минут и ответит на все интересующие вас вопросы
+						</p>
+					</div>
+				</div>
+				<div class="modal-order__form">
+					<form action="" class="modal-form">
+						<label class="modal-form__label">
+							<div class="modal-form__label-heading">
+								<span class="modal-form__label-title">Ваше имя</span>
+							</div>
+							<input type="mail" class="modal-form__input" placeholder="info@gmail.com">
+						</label>
+						<label class="modal-form__label">
+							<div class="modal-form__label-heading">
+								<span class="modal-form__label-title">Ваш телефон</span>
+							</div>
+							<input type="mail" class="modal-form__input" placeholder="info@gmail.com">
+						</label>
+						<label class="modal-form__label">
+							<div class="modal-form__label-heading">
+								<span class="modal-form__label-title">Ваша почта</span>
+							</div>
+							<input type="mail" class="modal-form__input" placeholder="info@gmail.com">
+						</label>
+						<div class="modal-form__button">
+							<button type="submit">
+								<span>Заказать звонок</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- modal-var END -->
+		<!-- modal var -->
+		<div class="modal__var">
+			<div class="modal-order">
+				<div class="modal-order__heading">
+					<div class="modal-order__title">
+						<span>Оставить отзыв</span>
+					</div>
+					<div class="modal-order__subtitle">
+						<p>
+							Заполните форму с вашим отзывом, мы получим и опубликуем ваш отзыв в ближайшее время
+						</p>
+					</div>
+				</div>
+				<div class="modal-order__form">
+					<form action="" class="modal-form">
+						<label class="modal-form__label">
+							<div class="modal-form__label-heading">
+								<span class="modal-form__label-title">Ваше имя</span>
+							</div>
+							<input type="mail" class="modal-form__input" placeholder="info@gmail.com">
+						</label>
+						<label class="modal-form__label">
+							<div class="modal-form__label-heading">
+								<span class="modal-form__label-title">Опишите ваш отзыв в одной предложении</span>
+								<span class="modal-form__label-pretitle">до 200 знаков</span>
+							</div>
+							<input type="area" class="modal-form__input" maxlength="200" placeholder="Короткий отзыв">
+						</label>
+						<label class="modal-form__label">
+							<div class="modal-form__label-heading">
+								<span class="modal-form__label-title">Ваша почта</span>
+								<span class="modal-form__label-pretitle">до 5000 знаков</span>
+							</div>
+							<input type="area" class="modal-form__input" maxlength="5000" placeholder="Подробный отзыв">
+						</label>
+						<label class="modal-form__file">
+							<div class="modal-form__file-icon">
+								<div class="clip-svg"></div>
+							</div>
+							<div class="modal-form__file-heading">
+								<span class="modal-form__file-title">Прикрепить файлы</span>
+								<span class="modal-form__label-pretitle">до 20mb</span>
+							</div>
+							<input type="file" class="modal-form__file" multiple placeholder="Подробный отзыв">
+						</label>
+						<div class="modal-form__button">
+							<button type="submit">
+								<span>Отправить отзыв</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- modal-var END -->
 	</div>
 </div>
+
+
+

@@ -6,8 +6,9 @@
 // import './scripts/slick-slider'
 // import './scripts/azazlyst'
 import "./scripts/menu";
-import "./scripts/slider";
 import "./scripts/scrollbar";
+import "./scripts/slider";
+import "./scripts/tabs"
 
 
 // // Vue

@@ -1,7 +1,8 @@
 let slides = document.querySelectorAll('#slides .slide');
+console.log(slides)
 let currentSlide = 0;
 let currentDot = 0;
-let slideInterval = setInterval(nextSlide, 9000);
+let slideInterval = setInterval(nextSlide, 10000000);
 let dotsWrapper = document.getElementById('main-slider__dots')
 let dots = []
 

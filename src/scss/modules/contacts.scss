@@ -1,10 +1,26 @@
 .contacts {
     border-top: 1px solid rgba(0, 0, 0, 0.06);
     margin-top: 31px;
+    @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+        margin-top: 22px;
+    }
+    @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
+        margin-top: 29px;
+    }
+    @media screen and (max-width: $beforeTableWidth) {        // max 767
+        flex-direction: column;
+        border-top: none;
+    }
     &__wrapper {
         display: flex;
         flex-direction: row;
         margin-top: 148px;
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            margin-top: 91px;
+        }
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
+            margin-top: 69px;
+        }
         @media screen and (max-width: $beforeTableWidth) {        // max 767
             flex-direction: column;
         }
@@ -12,6 +28,10 @@
     &__title {
         flex: 0 0 41.5%;
         max-width: 41.5%;
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            flex: 0 0 37.6%;
+            max-width: 37.6%;
+        }
         span {
             font-family: $AR;
             font-size: 53px;
@@ -20,7 +40,7 @@
                 font-size: 39px;
             }
             @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
-                font-size: 12px;
+                font-size: 39px;
             }
             @media screen and (max-width: $beforeTableWidth) {        // max 767
                 font-size: 25px;
@@ -32,19 +52,42 @@
         max-width: unset;
         display: flex;
         flex-direction: column;
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            margin-top: -11px;
+        }
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
+            margin-top: -5px;
+        }
         @media screen and (max-width: $beforeTableWidth) {        // max 767
             flex: unset;
             max-width: unset;
+            margin-top: 40px;
         }
     }
     &__item {
         display: flex;
         flex-direction: column;
         margin-bottom: 67px;
+        
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            margin-bottom: 73px;
+        }
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
+            margin-bottom: 97px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            margin-bottom: 52px;
+        }
     }
     &__pre-title {
         padding-bottom: 23px;
         border-bottom: 1px solid #C0C0C0;
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            padding-bottom: 25px;
+        }
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
+            padding-bottom: 26px;
+        }
         span {
             font-family: $AR;
             font-size: 14px;
@@ -60,32 +103,84 @@
             }
         }
     }
+    &__acontact {
+        padding-top: 28px;
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            padding-top: 23px;
+        }
+        span {
+            font-family: $AR;
+            font-size: 36px;
+            line-height: 45px;
+            color: #000;
+            @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+                font-size: 26px;
+                line-height: 35px;
+            }
+            @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
+                font-size: 23px;
+                line-height: 30px;
+            }
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                font-size: 19px;
+                line-height: 24px;
+            }
+            
+        }
+    }
     &__contact {
         padding-top: 28px;
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            padding-top: 23px;
+        }
         a {
             display: flex;
             flex-direction: row;
             align-items: center;
+            
+            &:hover {
+                span {
+                    opacity: .6;
+                }
+                .asterick-svg {
+                    opacity: .6;
+                }
+            }
             span {
                 font-family: $AR;
                 font-size: 48px;
                 line-height: 48px;
                 color: #000;
+                transition:.4s;
                 @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
-                    font-size: 26px;
+                    font-size: 37px;
+                    line-height: 40px;
                 }
                 @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
-                    font-size: 23px;
+                    font-size: 30px;
+                    line-height: 30px;
                 }
                 @media screen and (max-width: $beforeTableWidth) {        // max 767
-                    font-size: 19px;
+                    font-size: 24px;
+                    line-height: 20px;
                 }
             }
             .asterick-svg {
                 height: 8px;
                 width: 14px;
                 margin: 0 6px;
+                transition: .3s;
                 background-color: #000;
+                @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
+                    height: 5px;
+                    width: 7px;
+                    margin: 0 3px;
+                }
+                @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+                    height: 6px;
+                    width: 10px;
+                    margin: 0 4px;
+                }
             }
         }
     }
@@ -94,6 +189,16 @@
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin-top: -9px;
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            margin-top: -27px;
+        }
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
+            margin-top: -70px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            margin-top: -11px;
+        }
         span {
             font-family: $AR;
             font-size: 14px;
@@ -110,6 +215,49 @@
                 flex: 0 0 50%;
                 max-width: 50%;
             }
+        }
+    }
+}
+
+.map {
+    margin-top: 263px;
+    @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+        margin-top: 134px;
+    }
+    @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
+        margin-top: 116px;
+    }
+    @media screen and (max-width: $beforeTableWidth) {        // max 767
+        margin-top: 88px;
+    }
+    &__heading {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        & .gray-empty-btn {
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                margin-top: 20px;
+            }
+        }
+    }
+    &__wrapper {
+        height: 543px;
+        margin-top: 56px;
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            margin-top: 134px;
+        }
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
+            margin-top: 36px;
+            height: 333px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            height: 321px;
+            margin-top: 46px;
         }
     }
 }
