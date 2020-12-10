@@ -19,6 +19,20 @@
     -webkit-mask: url(../img/svg/fa.svg) no-repeat center;
     mask: url(../img/svg/fa.svg) no-repeat center;
 }
+.insta-svg {
+    display: inline-block;
+    vertical-align: middle;
+    transition: 0.4s ease;
+    -webkit-mask: url(../img/svg/insta.svg) no-repeat center;
+    mask: url(../img/svg/insta.svg) no-repeat center;
+}
+.fb-svg {
+    display: inline-block;
+    vertical-align: middle;
+    transition: 0.4s ease;
+    -webkit-mask: url(../img/svg/fb.svg) no-repeat center;
+    mask: url(../img/svg/fb.svg) no-repeat center;
+}
 .twitter-svg {
     display: inline-block;
     vertical-align: middle;
@@ -89,7 +103,13 @@
     -webkit-mask: url(../img/svg/search.svg) no-repeat center;
     mask: url(../img/svg/search.svg) no-repeat center;
 }
-
+.chat-svg {
+    display: inline-block;
+    vertical-align: middle;
+    transition: 0.4s ease;
+    -webkit-mask: url(../img/svg/chat.svg) no-repeat center;
+    mask: url(../img/svg/chat.svg) no-repeat center;
+}
 .slider-right-svg {
     display: inline-block;
     vertical-align: middle;
@@ -110,6 +130,13 @@
     transition: 0.4s ease;
     -webkit-mask: url(../img/svg/rub.svg) no-repeat center;
     mask: url(../img/svg/rub.svg) no-repeat center;
+}
+.usd-svg {
+    display: inline-block;
+    vertical-align: middle;
+    transition: 0.4s ease;
+    -webkit-mask: url(../img/svg/usd-svg.svg) no-repeat center;
+    mask: url(../img/svg/usd-svg.svg) no-repeat center;
 }
 // BTNs
 .make-review-text-btn {
@@ -223,6 +250,8 @@
         font-family: $AR;   
         color: #2F2F2F;
         transition:.3s;
+        pointer-events: none;
+        user-select: none;
         @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
             font-size: 12px;
         }

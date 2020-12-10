@@ -19,6 +19,9 @@
     & .container{
         height: 100%;
     }
+    & .catalog-main-form {
+        height:100%;
+    }
     &__accept-btns {
         margin-top: 12px;
         .accept-btn {
@@ -110,6 +113,7 @@
         display: flex;
     }
     @media screen and (max-width: $beforeTableWidth) {        // max 767
+        display:none;
         margin-top:35px;
         flex: unset;
         max-width: unset;
@@ -126,6 +130,7 @@
             background-color: #DEDEDE;
         }
     }
+
     &__preview {
         height: 100%;
         display: flex;
@@ -358,7 +363,7 @@
         @media screen and (max-width: $beforeTableWidth) {        // max 767    
             display: none;
         }
-        & a {
+        & button {
             &:hover {
                 background-color:#272727;
                 border-color:#272727;
@@ -366,6 +371,8 @@
                     color:#FFFFFF;
                 }
             }
+            cursor: pointer;
+            background-color: transparent;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -476,6 +483,10 @@
     &__wrapper  {
         padding-top: 75px;
         padding-bottom: 122px;
+        transition: .4s;
+        &.animation .row {
+            filter:blur(3px);
+        }
         @media screen and (max-width: $beforeDesktopWidth) {            // max 1200        
             padding-top: 69px;
         }
@@ -485,6 +496,14 @@
         }
     }
     &__preloader {
+        pointer-events: none;
+        opacity: 0;
+        visibility: hidden;
+        transition:.4s;
+        &.show {
+            opacity: 1;
+            visibility: visible;
+        }
         cursor: pointer;
         display: flex;
         justify-content: center;

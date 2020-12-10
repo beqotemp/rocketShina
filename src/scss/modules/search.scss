@@ -237,6 +237,25 @@
     }
 
 }
+.nothing-found-catalog {
+    width: 100%;
+    & .nothing-found__wrapper {
+        padding-top: 21px;
+        padding-bottom: 26px;
+        @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        @media screen and (max-width: $beforeSmDesktopWidth) {        // max 991
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        @media screen and (max-width: $beforeTableWidth) {        // max 767
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+}
 .nothing-found {
     border-top: 1px solid rgba(0, 0, 0, 0.06);
     margin-top: 30px;

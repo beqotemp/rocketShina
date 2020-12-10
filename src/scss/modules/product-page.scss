@@ -42,6 +42,14 @@
                 }
             }
         }
+        span {
+            font-family: $GR;
+            font-size: 13px;
+            color: #616161;
+            @media screen and (max-width: $beforeDesktopWidth) {            // max 1200
+                font-size: 12px;
+            }
+        }
     }
 }
 
@@ -321,6 +329,12 @@
             height: 9px;
             width: 11px;
         }
+        & .usd-svg {
+            background-color: #000;
+            margin-left: -3px;
+            height: 9px;
+            width: 11px;
+        }
     }
     &__main {
         display: flex;
@@ -360,10 +374,26 @@
                 margin-left: 0;
             }
         }
+        & .usd-svg {
+            background-color: #000;
+            height: 15px;
+            width: 10px;
+            margin-left: 4px;
+            @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
+                height: 10px;
+                margin-left: 1px;
+            }
+            @media screen and (max-width: $beforeTableWidth) {        // max 767
+                height: 7px;
+                width: 9px;
+                margin-left: 0;
+            }
+        }
     }   
 }
 
 .product-tabs {
+    padding-bottom: 20px;
     &__wrapper {
         display: flex;
         flex-direction: column;

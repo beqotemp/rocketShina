@@ -1,6 +1,7 @@
 .clearance { 
     border-top: 1px solid rgba(0, 0, 0, 0.06);
     margin-top: 30px;
+    overflow:hidden;
     @media screen and (max-width: $beforeDesktopWidth) {            // max 1200
         margin-top: 23px;
     }
@@ -98,15 +99,15 @@
 
 .clearance-bens {
     &__wrapper{
-        padding-top: 163px;
+        padding-top: 113px;
         @media screen and (max-width: $beforeDesktopWidth) {            // max 1200
-            padding-top: 93px;
+            padding-top: 81px;
         }
         @media screen and (max-width: $beforeSmDesktopWidth) {    // 991
             padding-top: 50px;        
         }
         @media screen and (max-width: $beforeTableWidth) {        // max 767    
-            padding-top: 63px;
+            padding-top: 33px;
         }
     }
     &__ben-wrapp {
@@ -316,6 +317,7 @@
             height: 77px;
             padding: 0 60px;
             border: 1px solid #fff;
+            transition:.3s;
             @media screen and (max-width: $beforeTableWidth) {        // max 767    
                 width: 100%;
                 max-width: 309px;
@@ -325,12 +327,20 @@
                 font-family: $AR;
                 font-size: 13px;
                 color: #fff;
+                transition:.3s;
                 @media screen and (max-width: $beforeSmDesktopWidth) {    // 991
                     font-size: 13px;
                 }
                 @media screen and (max-width: $beforeTableWidth) {        // max 767    
                     font-size: 12px;
                 }
+            }
+            &:hover {
+                background-color: #FAC400;
+                border-color: #FAC400;
+                & span {
+                    color:#2E2E2E;
+                }   
             }
         }
     } 

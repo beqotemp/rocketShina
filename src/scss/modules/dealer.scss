@@ -1,6 +1,7 @@
 .dealers { 
     border-top: 1px solid rgba(0, 0, 0, 0.06);
     margin-top: 30px;
+    overflow: hidden;
     @media screen and (max-width: $beforeDesktopWidth) {            // max 1200
         margin-top: 23px;
     }
