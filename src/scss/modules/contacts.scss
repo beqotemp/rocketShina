@@ -201,6 +201,10 @@
                     font-size: 24px;
                     line-height: 20px;
                 }
+                @media screen and (max-width: $smPhoneWidth) {        // max 325
+                    font-size: 20px;
+                    line-height: 14px;
+                }
             }
             .asterick-svg {
                 height: 8px;

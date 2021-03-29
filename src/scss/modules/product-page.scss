@@ -350,13 +350,7 @@
                 font-size: 24px;
             }
             @media screen and (max-width: $beforeTableWidth) {        // max 767
-                font-size: 20px;
-            }
-            @media screen and (max-width: 354px ) {        // max 354
-                font-size: 20;
-            }
-            @media screen and (max-width: $smPhoneWidth ) {        // max 325
-                font-size: 15px;
+                font-size: 10px;
             }
         }
         & .rub-svg {

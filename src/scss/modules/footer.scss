@@ -95,6 +95,12 @@
                 padding: 14.5px 9px;
                 margin-right: 8px;
             }
+            @media screen and (max-width: $smPhoneWidth) {        // max 325
+                font-size: 10px;
+                padding: 14.5px 3px;
+                padding-left: 10px;
+                margin-right: 0px;
+            }
             &:nth-child(4):after {
                 display: none;
             }
@@ -278,6 +284,9 @@
             transition:.3s;
             @media screen and (max-width: $beforeDesktopWidth) {            // max 1999
                 font-size: 11px;
+            }
+            @media screen and (max-width: $smPhoneWidth) {        // max 325
+                font-size: 9px;
             }
         }
         &:hover {

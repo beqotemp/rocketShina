@@ -5,10 +5,10 @@
 // import './scripts/sticky.js'
 // import './scripts/slick-slider'
 // import './scripts/azazlyst'
-// import "./scripts/menu";
-// import "./scripts/scrollbar";
-// import "./scripts/slider";
-// import "./scripts/tabs";
+import "./scripts/menu";
+import "./scripts/scrollbar";
+import "./scripts/slider";
+import "./scripts/tabs";
 import "./scripts/menu-scroll"
 
 

@@ -8,7 +8,7 @@
     "watch": "webpack --mode development --watch",
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production && prettier --print-width=120 --parser html --write dist/*.html",
-    "serve": "webpack-dev-server --host 192.168.1.180 --port 8080"
+    "serve": "webpack-dev-server --host 127.0.0.1 --port 8080"
   },
   "dependencies": {
     "popper.js": "^1.14.6",

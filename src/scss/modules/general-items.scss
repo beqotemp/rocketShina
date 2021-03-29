@@ -237,8 +237,9 @@
     justify-content: center;
     align-items: center;
     padding: 18px 54px;
-    background-color: #DEDEDE;
+    background-color: transparent;
     transition:.3s;
+    border: 1px solid #FAC400;
     @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
      padding: 13px 45px;   
     }
