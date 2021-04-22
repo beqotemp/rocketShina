@@ -64,7 +64,7 @@
     &__picture {
         background-size: contain;
         background-position: 50%;
-        height: 70%;
+        height: 100%;
         width: 100%;
         background-repeat: no-repeat;
     }
@@ -351,6 +351,9 @@
             }
             @media screen and (max-width: $beforeTableWidth) {        // max 767
                 font-size: 10px;
+            }
+            &.on-demant-caption {
+                font-size: 14px;
             }
         }
         & .rub-svg {

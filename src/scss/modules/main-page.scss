@@ -438,6 +438,7 @@
         & img {
             max-width: 100%;
             height: 200px;
+            width: auto;
             @media screen and (max-width:$beforeDesktopWidth ) {        // max 1199
                 height: 187px;
             }
