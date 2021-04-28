@@ -289,6 +289,7 @@
             font-family: $GR;
             font-size: 14px;
             color: #868686;
+            -webkit-appearance: textfield;
             @media screen and (max-width: $beforeDesktopWidth) {            // max 1200
                 font-size: 12px;
             }
